@@ -4,8 +4,8 @@
     <list default="true" id="d715c24a-500d-4c39-9e16-d7696db00ee6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,11 +41,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env.pro" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env.pro" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configs/env/.env.pro">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
               <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-contact.xoo" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/gynos/page-contact.xoo">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.xoo" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/gynos/partial/footer.xoo">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -135,7 +155,6 @@
         <option value="$PROJECT_DIR$/themes/gynos/page-product.xoo" />
         <option value="$PROJECT_DIR$/themes/gynos/page-blog.xoo" />
         <option value="$PROJECT_DIR$/frontend/posts/controllers.js" />
-        <option value="$PROJECT_DIR$/themes/gynos/page-contact.xoo" />
         <option value="$PROJECT_DIR$/admin/settings/theme-options.js" />
         <option value="$PROJECT_DIR$/admin/posts/views/create.xoo" />
         <option value="$PROJECT_DIR$/admin/pages/views/create.xoo" />
@@ -157,6 +176,7 @@
         <option value="$PROJECT_DIR$/admin/views/layout.xoo" />
         <option value="$PROJECT_DIR$/configs/express.js" />
         <option value="$PROJECT_DIR$/configs/env/.env.pro" />
+        <option value="$PROJECT_DIR$/themes/gynos/page-contact.xoo" />
       </list>
     </option>
   </component>
@@ -323,7 +343,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -359,7 +378,11 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configs">
+            <PATH_ELEMENT USER_OBJECT="themes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gynos">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -373,17 +396,22 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configs">
+            <PATH_ELEMENT USER_OBJECT="themes">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="env">
+            <PATH_ELEMENT USER_OBJECT="gynos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="partial">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -581,12 +609,13 @@
       <workItem from="1491717775959" duration="17000" />
       <workItem from="1491799887065" duration="15104000" />
       <workItem from="1491876912611" duration="19855000" />
-      <workItem from="1491962903015" duration="7882000" />
+      <workItem from="1491962903015" duration="8479000" />
+      <workItem from="1491978600301" duration="97000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="580045000" />
+    <option name="totallyTimeSpent" value="580739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/gynos/partial/footer.xoo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="38" column="81" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/gynos/index.xoo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -763,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="84" column="43" lean-forward="true" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="38" />
-          <folding>
-            <element signature="e#174#583#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +814,6 @@
         <state relative-caret-position="213">
           <caret line="28" column="95" lean-forward="false" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
           <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,15 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/gynos/page-contact.xoo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,10 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-          <folding>
-            <element signature="e#153#1054#0" expanded="false" />
-            <element signature="e#1077#2360#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,17 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="87" column="53" lean-forward="false" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
-          <folding>
-            <element signature="e#253#620#0" expanded="false" />
-            <element signature="e#796#1292#0" expanded="false" />
-            <element signature="e#1372#1921#0" expanded="false" />
-            <element signature="e#1975#2431#0" expanded="false" />
-            <element signature="e#2487#3350#0" expanded="false" />
-            <element signature="e#3418#4023#0" expanded="false" />
-            <element signature="e#4080#4871#0" expanded="false" />
-            <element signature="e#4930#5699#0" expanded="false" />
-            <element signature="e#5766#6069#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,11 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="134" column="8" lean-forward="true" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="50" />
-          <folding>
-            <element signature="e#209#2083#0" expanded="false" />
-            <element signature="e#2143#3073#0" expanded="false" />
-            <element signature="e#3123#3385#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,10 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="165" column="8" lean-forward="true" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
-          <folding>
-            <element signature="e#222#2080#0" expanded="false" />
-            <element signature="e#2143#3070#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="110" lean-forward="false" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5245">
           <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="817" column="1" lean-forward="true" selection-start-line="817" selection-start-column="1" selection-end-line="817" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,14 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding>
-            <element signature="e#221#2483#0" expanded="false" />
-            <element signature="e#2543#3670#0" expanded="false" />
-            <element signature="e#3720#3979#0" expanded="false" />
-            <element signature="e#4029#4770#0" expanded="false" />
-            <element signature="e#4819#5276#0" expanded="false" />
-            <element signature="e#5317#5961#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,16 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="90" column="44" lean-forward="false" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
-          <folding>
-            <element signature="e#3981#4023#0" expanded="false" />
-            <element signature="e#4061#4410#0" expanded="false" />
-            <element signature="e#5163#5373#0" expanded="false" />
-            <element signature="e#5690#8180#0" expanded="false" />
-            <element signature="e#8242#8802#0" expanded="false" />
-            <marker date="1491969131655" expanded="true" signature="7070:7383" ph="..." />
-            <marker date="1491969131655" expanded="true" signature="7779:8084" ph="..." />
-            <marker date="1491969131655" expanded="true" signature="10131:10317" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -994,14 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="157" column="25" lean-forward="true" selection-start-line="157" selection-start-column="25" selection-end-line="157" selection-end-column="25" />
-          <folding>
-            <element signature="e#239#1203#0" expanded="false" />
-            <element signature="e#1247#1775#0" expanded="false" />
-            <element signature="e#1835#2682#0" expanded="false" />
-            <element signature="e#2846#3469#0" expanded="false" />
-            <element signature="e#3507#3758#0" expanded="false" />
-            <element signature="e#3798#4360#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,15 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
           <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding>
-            <element signature="e#217#1811#0" expanded="false" />
-            <element signature="e#1871#2683#0" expanded="false" />
-            <element signature="e#2724#2771#0" expanded="false" />
-            <element signature="e#2810#3433#0" expanded="false" />
-            <element signature="e#3471#3689#0" expanded="false" />
-            <element signature="e#3729#4291#0" expanded="false" />
-            <element signature="e#4332#4778#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1025,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="448" column="25" lean-forward="false" selection-start-line="448" selection-start-column="25" selection-end-line="448" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,6 +1011,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/partial/footer.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/page-contact.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
           <folding />
         </state>
       </provider>
