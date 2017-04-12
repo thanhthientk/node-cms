@@ -1,0 +1,38 @@
+<div class="modal fade" id="uploadPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Tải lên tập tin mới</h4>
+            </div>
+            <div class="modal-body" style="padding: 10px;">
+                <form id="upload-form" class="hidden" enctype="multipart/form-data" method="post" action="/admin/media/create" onsubmit="return doUpload()">
+                    <input type="hidden" name="fileType" id="fileType" value="{{ reqQuery.type if reqQuery.type else 'image' }}">
+                    <input type="file" name="file" id="files" multiple="multiple" class="btn btn-default hidden"/>
+                </form>
+                <table class="table upload-table">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center">STT</th>
+                        <th>Tên file</th>
+                        <th>Kích thước</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody class="hidden">
+                    <tr>
+                        <td>1</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                        <td>1mb</td>
+                        <td>success</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-select-files" type="button" class="btn btn-primary pull-left">Chọn file</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>

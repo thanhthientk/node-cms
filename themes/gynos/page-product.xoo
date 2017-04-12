@@ -1,0 +1,86 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="content">
+        <div class="content-shoptop content-top1">
+            <div class="container">
+                <div class="banner-slider banner-slider1 banner-shop">
+                    <div class="wrap-item" data-pagination="false" data-autoplay="true" data-navigation="true" data-itemscustom="[[0,1]]">
+                        {% for image in Options['product_gallery'] %}
+                            <div class="item-slider">
+                                <div class="banner-thumb">
+                                    <a href="#">
+                                        <img src="/uploads/{{ image.path + image.ext }}" alt="{{ image.name }}" />
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="bread-crumb">
+                    <a href="/">Trang chủ</a>
+                    {% if pageType === 'product_category' %}
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <a href="/products">Sản phẩm</a>
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <span>{{ categoryName }}</span>
+                    {% else %}
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <span>Sản phẩm</span>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <div class="product-list has-sidebar">
+                            <ul class="list-product row list-unstyled">
+                                {% for product in products %}
+                                    <li class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="item-product clearfix">
+                                            <div class="product-thumb">
+                                                <a href="/products/{{ product.slug }}" class="product-thumb-link">
+                                                    <img class="img-responsive" src="/uploads/{{ product.gallery[0].path + product.gallery[0].ext }}" alt="{{ product.name }}" style="height: 250px;">
+                                                </a>
+                                                <div class="product-extra-link">
+                                                    <a href="/products/{{ product.slug }}" class="addcart-link"><i class="fa fa-opencart" aria-hidden="true"></i></a>
+                                                </div>
+                                                <a href="/products/{{ product.slug }}" class="quickview-link fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-title"><a href="/products/{{ product.slug }}">{{ product.name }}</a></h3>
+                                                <div class="product-rate">
+                                                    <div class="product-rating" style="width:100%"></div>
+                                                </div>
+                                                <p class="desc">{{ product.description }}</p>
+                                                <div class="wrap-cart-qty">
+                                                    <div class="product-price">
+                                                        <del><span>{{ product.fields.old_price }}</span></del>
+                                                        <ins><span>{{ product.fields.price }}</span></ins>
+                                                    </div>
+                                                    <a class="btn-link-default add-to-cart" href="/products/{{ product.slug }}">Xem chi tiết</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {% else %}
+                                    <h2>Không tìm thấy sản phẩm nào!</h2>
+                                {% endfor %}
+                            </ul>
+
+                            {#Pagination#}
+                            {% include './partial/pagination.xoo' %}
+
+                        </div>
+                    </div>
+
+                    {#Sidebar#}
+                    {% include './partial/product-sidebar.xoo' %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    <section class="content-header">
+        <h1>
+            {{ 'Cập nhật - Hình ảnh' if reqQuery.type === 'image' else 'Cập nhật - Gallery' }}
+        </h1>
+    </section>
+
+    {#Toolbar#}
+    <div class="toolbar">
+        <a href="/admin/{{ moduleInfo.slug }}?type={{ reqQuery.type }}" class="btn btn-default">
+            <i class="fa fa-angle-left"></i>
+            Quay lại
+        </a>
+        <button class="btn btn-primary" id="submitMainForm">
+            <i class="fa fa-check"></i>
+            Cập nhật
+        </button>
+    </div>
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value="{{ _csrf }}">
+        {# Form inputs#}
+        <div class="box box-primary">
+            <div class="box-body">
+                {{ Form.Input({label: 'Tên', name: 'name', value: item.name, required: true}) }}
+                {% for language in languages %}
+                    {{ Form.Input({label: 'Caption - ' + language.name, name: '_field_caption_' + language.code, value: item.fields['caption_' + language.code]}) }}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-body">
+                <img src="/uploads/{{ item.path + item.ext }}" alt="{{ item.name }}" class="img-responsive">
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

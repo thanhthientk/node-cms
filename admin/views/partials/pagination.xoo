@@ -1,0 +1,33 @@
+{% set pages = paginated.pages %}
+{% set page = paginated.page %}
+{% set path = paginated.path %}
+{% set prevPage = page*1 - 1 %}
+{% set nextPage = page*1 + 1 %}
+
+{% if paginated.total %}
+    {{ paginated.total }} kết quả
+{% else %}
+    <h4>Không tìm thấy bản ghi nào!</h4>
+{% endif %}
+
+{% if pages > 1 %}
+    <ul class="pagination pagination-sm no-margin pull-right">
+        {% if prevPage == 0 %}
+            <li class="disabled"><a>«</a></li>
+        {% else %}
+            <li><a href="{{ path[prevPage - 1] }}">«</a></li>
+        {% endif %}
+
+        {% set count = 0 %}
+        {% for p in path %}
+            {% set count = count + 1 %}
+            <li class="{{ 'active' if count == page }}"><a href="{{ p }}">{{ count }}</a></li>
+        {% endfor %}
+
+        {% if nextPage > pages %}
+            <li class="disabled"><a>»</a></li>
+        {% else %}
+            <li><a href="{{ path[nextPage - 1] }}">»</a></li>
+        {% endif %}
+    </ul>
+{% endif %}

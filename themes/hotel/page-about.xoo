@@ -1,0 +1,86 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <!--Breadcrumb Section-->
+    <section id="breadcrumb-section" data-bg-img="/uploads/{{ Options['about_image'] }}">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ Options['about_title_1'][LANG] }}</div>
+                    <div class="sub-title">{{ Options['about_title_2'][LANG] }}</div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li class="current"><a href="/{{ LANG }}/about">{{ Options['about_title_1'][LANG] }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End of Breadcrumb Section-->
+
+    <!--Welcome Section-->
+    <section id="welcome-section" class="simple">
+        <div class="inner-container container">
+            <div class="ravis-title-t-2">
+                <div class="title"><span>{{ Options['about_title_3'][LANG] }}</span></div>
+                <div class="sub-title">{{ Options['about_title_4'][LANG] }}</div>
+            </div>
+            <div class="content">{{ Options['about_desc'][LANG] }}</div>
+        </div>
+    </section>
+    <!--End of Welcome Section-->
+
+    <!-- Hotel Sections -->
+    <section id="hotel-sections">
+        <div class="section-row clearfix">
+            <div class="desc animated-box" data-animation="fadeInUp" data-delay="400">
+                <div class="ravis-title-t-1">
+                    <div class="title"><span>{{ Options['about_section_1_title_1'][LANG] }}</span></div>
+                    <div class="sub-title">{{ Options['about_section_1_title_2'][LANG] }}</div>
+                </div>
+                <div class="content">{{ Options['about_section_1_content'][LANG] | safe }}</div>
+            </div>
+            <div class="img-container animated-box" data-animation="fadeInUp"
+                 data-bg-img="/uploads/{{ Options['about_section_1_image'] }}"></div>
+        </div>
+        <div class="section-row clearfix">
+            <div class="img-container animated-box" data-animation="fadeInUp"
+                 data-bg-img="/uploads/{{ Options['about_section_2_image'] }}"></div>
+            <div class="desc animated-box" data-animation="fadeInUp" data-delay="400">
+                <div class="ravis-title-t-1">
+                    <div class="title"><span>{{ Options['about_section_2_title_1'][LANG] }}</span></div>
+                    <div class="sub-title">{{ Options['about_section_2_title_2'][LANG] }}</div>
+                </div>
+                <div class="content">{{ Options['about_section_1_content'][LANG] | safe }}</div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Hotel Sections -->
+
+    <!--Our Services Section-->
+    <section id="our-services">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ Options['about_section_service_title_1'][LANG] }}</div>
+                    <div class="sub-title">{{ Options['about_section_service_title_2'][LANG] }}</div>
+                </div>
+            </div>
+
+            <div id="services-box" class="owl-carousel owl-theme">
+                {% for service in services %}
+                    <div class="item">
+                        <a href="#" style="display: block">
+                            <img src="/uploads/{{ service.gallery[0].path + service.gallery[0].ext }}" alt="{{ service.name }}">
+                            <div class="title">{{ service.name }}</div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--End of Our Services Section-->
+{% endblock %}

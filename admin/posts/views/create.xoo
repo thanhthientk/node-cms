@@ -1,0 +1,90 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {% if controller == 'edit' %}
+        <form method="post" action="/admin/{{ moduleInfo.slug }}/delete" class="pull-right">
+            <input type="hidden" name="_csrf" value={{ _csrf }}>
+            <input type="hidden" name="single" value='true'>
+            <input type="hidden" name="listId" value={{ item.id }}>
+            <button type="submit" class="btn btn-danger pull-right">
+                <i class="fa fa-remove"></i>
+                Xóa
+            </button>
+        </form>
+    {% endif %}
+
+    <section class="content-header pull-left">
+        <h1>
+            {% if controller !== 'index' %}
+                {{ moduleInfo.childLabel }}
+            {% endif %}
+            {{ moduleInfo.label }}
+        </h1>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        <input type="hidden" name="itemId" value="{{ item.id }}">
+        <input type="hidden" name="postType" value="post">
+        {# Form inputs#}
+        <div class="row">
+            {#left#}
+            <div class="col-md-9 col-xs-12">
+                <div class="box">
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Tiêu đề', name: 'name', value: item.name, required: true}) }}
+                        {{ Form.Editor({label: 'Nội dung', name: 'content', value: item.content}) }}
+                        {{ Form.Textarea({label: 'Miêu tả ngắn', name: 'description', value: item.description}) }}
+                        {% if controller !== 'create' %}
+                            {{ Form.Alias('posts', item.slug) }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h4 class="box-title">Tối ưu SEO</h4>
+                    </div>
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Thẻ tiêu đề', name: '_field_seo_title', value: item.fields.seo_title}) }}
+                        {{ Form.Textarea({label: 'Thẻ mô tả', name: '_field_seo_desc', value: item.fields.seo_desc}) }}
+                    </div>
+                </div>
+            </div>
+            {#right#}
+            <div class="col-md-3 col-xs-12">
+                {#Status#}
+                {{ Form.BoxPostStatus(item.status) }}
+
+                {#categories#}
+                <div class="categories-box">
+                    {{ Form.TaxonomiesBox({
+                        label: 'Danh mục',
+                        inputName: 'categories',
+                        taxonomyModule: 'posts',
+                        taxonomyType: 'category',
+                        items: categories,
+                        canCreateNewItem: true,
+                        selectedItems: item.categories
+                    }) }}
+                </div>
+
+                {#image#}
+                {{ Form.SingleImageId(item.image) }}
+
+            </div>
+        </div>
+    </form>
+
+    {#Media Popup#}
+    {% include "../../media/views/media-popup.xoo" %}
+    {#Upload Popup#}
+    {% include "../../media/views/upload-popup.xoo" %}
+
+
+{% endblock %}
+
+{% block js %}
+    <script src="/admin/plugins/ckeditor/ckeditor.js"></script>
+{% endblock %}

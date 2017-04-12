@@ -1,0 +1,61 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <section id="event-top-section">
+        <!-- Event Slider-->
+        <section id="event-slider">
+            {% for image in tour.gallery %}
+                <div class="items">
+                    <div class="img-container" data-bg-img="/uploads/{{ image.path + image.ext }}"></div>
+                </div>
+            {% endfor %}
+        </section>
+        <!-- End of Event Slider-->
+        <div class="inner-container container">
+            <div class="event-title-box">
+                <h1 class="title">{{ tour.name }}</h1>
+                <div class="sub-title">{{ Options['tr_room_price_from'][LANG] }} : {{ tour.fields.price }}</div>
+            </div>
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li><a href="/{{ LANG }}/tours">Tour</a></li>
+                    <li class="current"><a href="/{{ LANG }}/tours/{{ tour.slug }}">{{ tour.name }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="event-desc">
+        <div class="inner-container container">
+            <form action="#" class="contact-form booking-form has-select2 clearfix" style="margin-top: 0px;">
+                <input type="hidden" name="type" value="tour">
+                <input type="hidden" name="_field_tour" value="{{ tour.name }}">
+                <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                <div class="field-row">
+                    <input type="text" placeholder="{{ Options['tr_name'][LANG] }}" name="_field_name" required/>
+                </div>
+                <div class="field-row">
+                    <input type="email" placeholder="Email" name="_field_email" required/>
+                </div>
+                <div class="field-row">
+                    <input type="text" placeholder="{{ Options['tr_phone'][LANG] }}" name="_field_phone" required/>
+                </div>
+                <div class="field-row">
+                    <select name="_field_guest" placeholder="Guests" required>
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="+5">+5</option>
+                    </select>
+                </div>
+                <div class="field-row">
+                    <input type="submit" value="Book"/>
+                </div>
+            </form>
+            <div class="content">{{ tour.content | safe }}</div>
+        </div>
+    </section>
+{% endblock %}

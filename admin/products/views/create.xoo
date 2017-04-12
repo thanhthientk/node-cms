@@ -1,0 +1,91 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {% include "../../views/partials/module-header.xoo" %}
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        <input type="hidden" name="itemId" value="{{ item.id }}">
+        <input type="hidden" name="postType" value="product">
+        {# Form inputs#}
+        <div class="row">
+            {#left#}
+            <div class="col-md-9 col-xs-12">
+                <div class="box">
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Tên Sản phẩm', name: 'name', value: item.name, required: true}) }}
+                        {{ Form.Editor({label: 'Chi tiết sản phẩm', name: 'content', value: item.content}) }}
+                        {{ Form.Textarea({label: 'Miêu tả ngắn', name: 'description', value: item.description}) }}
+                        {% if controller !== 'create' %}
+                            {{ Form.Alias('posts', item.slug) }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="box box-solid">
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Giá hiện tại', name: '_field_price', value: item.fields['price'], placeholder: '700.000 vnđ'}) }}
+                        {{ Form.Input({label: 'Giá cũ', name: '_field_old_price', value: item.fields['old_price'], placeholder: '1.100.000 vnđ'}) }}
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h4 class="box-title">Tối ưu SEO</h4>
+                    </div>
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Thẻ tiêu đề', name: '_field_seo_title', value: item.fields.seo_title}) }}
+                        {{ Form.Textarea({label: 'Thẻ mô tả', name: '_field_seo_desc', value: item.fields.seo_desc}) }}
+                    </div>
+                </div>
+            </div>
+            {#right#}
+            <div class="col-md-3 col-xs-12">
+                {#Status#}
+                {{ Form.BoxPostStatus(item.status) }}
+
+                {#Categories#}
+                {{ Form.TaxonomiesBox({
+                    label: 'Danh mục Sản phẩm',
+                    inputName: 'categories',
+                    taxonomyModule: 'products',
+                    taxonomyType: 'product_category',
+                    items: categories,
+                    canCreateNewItem: true,
+                    selectedItems: item.categories
+                }) }}
+
+                {{ Form.GalleryId({
+                    label: 'Hình ảnh',
+                    pathName: 'gallery',
+                    targetId: 'post-gallery',
+                    value: item.gallery,
+                    galleryClass: 'small'
+                }) }}
+            </div>
+        </div>
+    </form>
+
+    {#Media Popup#}
+    {% include "../../media/views/media-popup.xoo" %}
+    {#Upload Popup#}
+    {% include "../../media/views/upload-popup.xoo" %}
+
+
+{% endblock %}
+
+{% block css %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.6/select2-bootstrap.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block js %}
+    <script src="/admin/plugins/ckeditor/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "ul.sortable" ).sortable({
+                placeholder: "ui-sortable-placeholder"
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="content">
+        <div class="content-shoptop content-top1">
+            <div class="container">
+                <div class="banner-slider banner-slider1 banner-shop">
+                    <div class="wrap-item" data-pagination="false" data-autoplay="true" data-navigation="true" data-itemscustom="[[0,1]]">
+                        {% for image in page.gallery %}
+                            <div class="item-slider">
+                                <div class="banner-thumb">
+                                    <a href="#"><img src="/uploads/{{ image.path + image.ext }}" alt="{{ page.name }}" style="height: 400px;" /></a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content content-single">
+            <div class="container">
+                <div class="bread-crumb">
+                    <a href="/">Trang chủ</a>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <span>{{ page.name }}</span>
+                </div>
+                <div class="page-content">
+                    <h2 class="post-title">{{ page.name }}</h2>
+                    <div class="post-info">
+                        <div class="single-content">
+                            {{ page.content | safe }}
+                        </div>
+                        <div class="text-right">
+                            <p><label>Đăng vào lúc:</label> <span class="post-date">{{ _global.timeFormat(page.createdOn, 'DD/MM/YYYY') }}</span></p>
+                            <div class="share-social">
+                                <label>Chia sẻ:</label>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://gynos.vn/page/{{ page.slug }}"><i class="fa fa-facebook-square"></i></a>
+                                <a href="https://plus.google.com/share?url=http://gynos.vn/page/{{ page.slug }}" style="margin-right: 0;"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

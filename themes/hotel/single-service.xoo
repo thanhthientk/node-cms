@@ -1,0 +1,45 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <section id="event-top-section">
+        <!-- Event Slider-->
+        <section id="event-slider">
+            {% for image in service.gallery %}
+                <div class="items">
+                    <div class="img-container" data-bg-img="/uploads/{{ image.path + image.ext }}"></div>
+                </div>
+            {% endfor %}
+        </section>
+        <!-- End of Event Slider-->
+        <div class="inner-container container">
+            <div class="event-title-box">
+                <h1 class="title">{{ service.name }}</h1>
+                <div class="sub-title">{{ service.description }}</div>
+            </div>
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li><a href="/{{ LANG }}/services">Services</a></li>
+                    <li class="current"><a href="/{{ LANG }}/services/{{ service.slug }}">{{ service.name }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="blog-section">
+        <div class="inner-container container">
+            <div class="post-main-container col-md-12">
+                <!-- Post boxes -->
+                <div class="post-box">
+                    <div class="post-b-sec">
+                        <div class="post-title-box">
+                            <a href="/{{ LANG }}/blog/{{ service.slug }}" class="post-title">{{ service.name }}</a>
+                        </div>
+                        <br>
+                        <div class="post-desc">{{ service.content | safe }}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

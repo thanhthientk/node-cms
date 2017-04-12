@@ -1,0 +1,109 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <section id="room-top-section">
+        <!-- Event Slider -->
+        <section id="room-slider">
+            {% for image in room.gallery %}
+                <div class="items">
+                    <div class="img-container" data-bg-img="/uploads/{{ room.gallery[0].path + room.gallery[0].ext }}"></div>
+                </div>
+            {% endfor %}
+        </section>
+        <!-- End of Event Slider -->
+        <div class="inner-container container">
+            <div class="room-title-box">
+                <h1 class="title">{{ room.name }}</h1>
+                <div class="price">
+                    <div class="title">{{ Options['tr_room_price_from'][LANG] }} :</div>
+                    <div class="value">{{ room.fields.price }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="room-desc">
+        <div class="inner-container container">
+            <div class="l-sec col-md-8">
+                <div class="amenities">
+                    <ul class="list-inline clearfix">
+                        <li class="col-md-6">
+                            <div class="title">{{ Options['tr_room_breakfast'][LANG] }} :</div>
+                            <div class="value">{{ room.fields.breakfast }}</div>
+                        </li>
+                        <li class="col-md-6">
+                            <div class="title">{{ Options['tr_room_room_size'][LANG] }} :</div>
+                            <div class="value">{{ room.fields.room_size }}</div>
+                        </li>
+                        <li class="col-md-6">
+                            <div class="title">{{ Options['tr_room_max_people'][LANG] }} :</div>
+                            <div class="value">{{ room.fields.max_people }}</div>
+                        </li>
+                        <li class="col-md-6">
+                            <div class="title">{{ Options['tr_room_view'][LANG] }} :</div>
+                            <div class="value">{{ room.fields.view }}</div>
+                        </li>
+                        <li class="col-md-12">
+                            <div class="title">{{ Options['tr_room_facilities'][LANG] }} :</div>
+                            <div class="value">{{ room.fields.facilities }}</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="description">
+                    {{ room.content | safe }}
+                </div>
+            </div>
+            <div class="r-sec col-md-4">
+                <form id="room-booking-form" class="booking-form has-select2">
+                    <input type="hidden" name="type" value="booking">
+                    <input type="hidden" name="_field_room" value="{{ room.name }}">
+                    <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                    <div class="input-daterange">
+                        <div class="field-row">
+                            <input placeholder="{{ Options['tr_checkin'][LANG] }}" class="datepicker-fields check-in" type="text"
+                                   name="start"/>
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <div class="field-row">
+                            <input placeholder="{{ Options['tr_checkout'][LANG] }}" class="datepicker-fields check-out" type="text"
+                                   name="end"/>
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <select name="adult">
+                            <option value="">{{ Options['tr_adult'][LANG] }}</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="field-row">
+                        <select name="child">
+                            <option value="">{{ Options['tr_child'][LANG] }}</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="field-row">
+                        <button
+                            id="CallBookingFormBtn"
+                            type="button"
+                            class="ravis-btn btn-type-1"
+                            data-toggle="modal"
+                            data-rooms="false"
+                            data-target="#Booking"
+                            style="width: 100%">
+                            <span class="inner-box">{{ Options['tr_book_now'][LANG] }}</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

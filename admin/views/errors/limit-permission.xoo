@@ -1,0 +1,10 @@
+{% extends "../layout.xoo" %}
+
+{% block content %}
+    <div class="col-xs-12">
+        <br>
+        <div class="alert alert-danger">
+            {{ pageTitle }}
+        </div>
+    </div>
+{% endblock %}

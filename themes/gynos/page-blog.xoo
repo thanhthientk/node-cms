@@ -1,0 +1,78 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="content">
+        <div class="content-shoptop content-top1">
+            <div class="container">
+                <div class="banner-slider banner-slider1 banner-shop">
+                    <div class="wrap-item" data-pagination="false" data-autoplay="true" data-navigation="true" data-itemscustom="[[0,1]]">
+                        {% for image in Options['blog_gallery'] %}
+                            <div class="item-slider">
+                                <div class="banner-thumb">
+                                    <a href="#">
+                                        <img src="/uploads/{{ image.path + image.ext }}" alt="{{ image.name }}" />
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="bread-crumb">
+                    <a href="/">Trang chủ</a>
+                    {% if pageType === 'blog_category' %}
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <a href="/blog">Bài viết</a>
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <span>{{ categoryName }}</span>
+                    {% else %}
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <span>Bài viết</span>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <div class="blog-list blog-main-left has-sidebar">
+                            {% for post in posts %}
+                                <div class="item-blog-list">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-xs-12">
+                                            <div class="post-thumb">
+                                                <a href="/blog/{{ post.slug }}" class="post-thumb-link">
+                                                    <img src="/uploads/{{ post.image.path + post.image.ext }}" alt="{{ post.name }}" width="370" height="247" />
+                                                </a>
+                                                <a href="/blog/{{ post.slug }}" class="post-thumb-zoom"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-12">
+                                            <div class="post-info">
+                                                <h3 class="post-title"><a href="/blog/{{ post.slug }}">{{ post.name }}</a></h3>
+                                                <ul class="post-comment-date list-none">
+                                                    <li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i><span>{{ _global.timeFormat(post.createdOn, 'DD/MM/YYYY') }}</span></li>
+                                                </ul>
+                                                <p class="desc">{{ post.description }}</p>
+                                                <a href="/blog/{{ post.slug }}" class="btn-link-default radius">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <h2>Không tìm thấy bài viết nào!</h2>
+                            {% endfor %}
+                        </div>
+
+                        {#Pagination#}
+                        {% include './partial/pagination.xoo' %}
+
+                    </div>
+
+                    {#Sidebar#}
+                    {% include './partial/blog-sidebar.xoo' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

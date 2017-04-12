@@ -1,0 +1,49 @@
+<div class="box box-default">
+    <div class="box-body">
+        <div class="form-group">
+            <label for="language">Ngôn ngữ</label>
+            {#Create From Post#}
+            {% if createPostTranslate %}
+                <input type="hidden" name="language" value="{{ languageOfThisItem.code }}">
+                <div class="form-control">
+                    <img src="/admin/dist/flags/{{ languageOfThisItem.flag }}.png" alt="">
+                    {{ languageOfThisItem.name }}
+                </div>
+                {% elif controller === 'create' or countItemsWasTranslate === 1 %}
+                <select name="language" id="language" class="form-control select2 flags">
+                    {% for language in languages %}
+                        <option value="{{ language.code }}" data-flag="{{ language.flag }}" {{ 'selected' if item.language === language.code}}>
+                            {{ language.name }}
+                        </option>
+                    {% endfor %}
+                </select>
+                {#Disabled Box Select Languages#}
+                {% elif controller === 'edit' %}
+                <div class="form-control">
+                    <img src="/admin/dist/flags/{{ languageOfThisItem.flag }}.png" alt="">
+                    {{ languageOfThisItem.name }}
+                </div>
+            {% endif %}
+        </div>
+        {% if controller === 'edit' or createPostTranslate %}
+            <div class="translations">
+                <h3>Dịch</h3>
+                {% for item in ItemsWasTranslate %}
+                    <a href="/admin/{{moduleInfo.slug}}/{{ item.id }}/edit" target="_blank">
+                        <img src="/admin/dist/flags/{{ _global.getFlag(languages, item.language) }}.png" alt="{{ item.language }}">
+                        <span>{{ item.name }}</span>
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                {% endfor %}
+
+                {% for language in LanguagesWillTranslate %}
+                    <a href="/admin/{{moduleInfo.slug}}/create?dl={{ item.documentsLanguage.id }}&language={{ language.code }}">
+                        <img src="/admin/dist/flags/{{ language.flag }}.png" alt="{{ language.name }}">
+                        <span></span>
+                        <i class="fa fa-plus"></i>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,49 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <!--Breadcrumb Section-->
+    <section id="breadcrumb-section" data-bg-img="/hotel/assets/img/breadcrumb.jpg">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ post.name }}</div>
+                </div>
+            </div>
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li><a href="/{{ LANG }}/blog">{{ Options['tr_blog'][LANG] }}</a></li>
+                    <li class="current"><a href="/{{ LANG }}/blog/{{ post.slug }}">{{ post.name }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End of Breadcrumb Section-->
+
+    <!--Blog Container-->
+    <section id="blog-section">
+        <div class="inner-container container">
+            <div class="post-main-container col-md-8">
+                <!-- Post boxes -->
+                <div class="post-box">
+                    <a class="post-img-box" href="#">
+                        <img src="/uploads/{{ post.image.path + post.image.ext }}" alt="{{ post.name }}" class="post-img">
+                    </a>
+                    <div class="post-b-sec">
+                        <div class="post-title-box">
+                            <a href="/{{ LANG }}/blog/{{ post.slug }}" class="post-title">{{ post.name }}</a>
+                        </div>
+                        <br>
+                        <div class="post-desc">{{ post.content | safe }}</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Sidebar Section-->
+            {% include './partial/blog-sidebar.xoo' %}
+        </div>
+    </section>
+    <!--End of Blog Container-->
+{% endblock %}

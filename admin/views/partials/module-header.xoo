@@ -1,0 +1,8 @@
+<section class="content-header">
+    <h1>
+        {% if controller !== 'index' %}
+            {{ moduleInfo.childLabel }}
+        {% endif %}
+        {{ moduleInfo.label }}
+    </h1>
+</section>

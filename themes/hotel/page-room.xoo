@@ -1,0 +1,84 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <!--Breadcrumb Section-->
+    <section id="breadcrumb-section" data-bg-img="/uploads/{{ Options['rooms_image'] }}">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ Options['rooms_title_1'][LANG] }}</div>
+                    <div class="sub-title">{{ Options['rooms_title_2'][LANG] }}</div>
+                </div>
+            </div>
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li class="current"><a href="#">{{ Options['rooms_title_1'][LANG] }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End of Breadcrumb Section-->
+
+    <!--Room Section-->
+    <section id="rooms-section" class="row-view">
+        <div class="inner-container container">
+            <div class="ravis-title-t-2">
+                <div class="title"><span>{{ Options['rooms_title_3'][LANG] }}</span></div>
+            </div>
+            <div class="desc">{{ Options['rooms_desc'][LANG] }}</div>
+
+            <div class="room-container clearfix">
+                {% for room in rooms %}
+                    <div class="room-box row animated-box" data-animation="fadeInUp">
+                        <div class="col-md-4 room-img" data-bg-img="/uploads/{{ room.gallery[0].path + room.gallery[0].ext }}">
+                            <a href="/{{ LANG }}/rooms/{{ room.slug }}" class="more-info-url"></a>
+                        </div>
+                        <div class="r-sec col-md-8">
+                            <div class="col-md-6 m-sec">
+                                <div class="title-box">
+                                    <div class="title">{{ room.name }}</div>
+                                    <div class="price">
+                                        <div class="title">{{ Options['tr_room_price_from'][LANG] }} :</div>
+                                        <div class="value">{{ room.fields.price }}</div>
+                                    </div>
+                                </div>
+                                <div class="amenities">
+                                    <ul class="list-inline clearfix">
+                                        <li class="col-md-6">
+                                            <div class="title">{{ Options['tr_room_breakfast'][LANG] }} :</div>
+                                            <div class="value">{{ room.fields.breakfast }}</div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="title">{{ Options['tr_room_room_size'][LANG] }} :</div>
+                                            <div class="value">{{ room.fields.room_size }}</div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="title">{{ Options['tr_room_max_people'][LANG] }} :</div>
+                                            <div class="value">{{ room.fields.max_people }}</div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="title">{{ Options['tr_room_view'][LANG] }} :</div>
+                                            <div class="value">{{ room.fields.view }}</div>
+                                        </li>
+                                        <li class="col-md-12">
+                                            <div class="title">{{ Options['tr_room_facilities'][LANG] }} :</div>
+                                            <div class="value">{{ room.fields.facilities }}</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="/{{ LANG }}/rooms/{{ room.slug }}" class="more-info">{{ Options['tr_more'][LANG] }}</a>
+                            </div>
+                            <div class="col-md-6 desc">{{ room.description }}</div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- End of Pagination -->
+            {% include './partial/pagination.xoo' %}
+
+        </div>
+    </section>
+    <!--End of Room Section-->
+{% endblock %}

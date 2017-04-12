@@ -1,0 +1,165 @@
+#t-logo img{
+	height: 100px; 
+	margin-top: 10px;
+}
+#main-header.sticky #t-logo img{
+	height: 70px;
+}
+#f-logo .desc{
+	font: 1.3em/1em 'Dancing Script', cursive;
+	left: 70px;
+	bottom: 42px;
+}
+#t-logo-footer img{
+	width:120px;
+}
+#rooms-section.row-view .room-container .room-box .room-img{
+	background-size: cover;
+}
+#rooms-section.row-view .room-container .room-box .m-sec .amenities ul li .title {
+	width: auto;
+	padding-right: 10px;
+}
+#blog-section .post-box .post-b-sec .post-title-box{
+	line-height: 1.3;
+	padding-bottom: 10px;
+}
+
+.post-desc img{
+	max-width: 100%;
+}
+
+/**/
+.tours-fixed{
+	position: fixed;
+	right:0;
+	bottom: 0;
+	width:195px;
+	padding: 15px 15px 0;
+	background-color: #d2bd7f;
+	z-index: 999;
+}
+.tours-fixed .item {
+	margin-bottom: 15px;
+}
+.tours-fixed .item:hover img{
+	opacity: .5;
+	-webkit-transition: all 500ms;
+	transition: all 500ms;
+}
+.tours-fixed .image{
+	border: 3px solid #fff;
+	position: relative;
+	background: #fff;
+}
+.tours-fixed .image img{
+	width: 100%;
+	height: 110px;
+	-webkit-transition: all 500ms;
+	transition: all 500ms;
+}
+.tours-fixed .image .caption{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 2px 5px;
+	background-color: #8bad4d;
+	color: #fff;
+}
+.tours-fixed .image .caption span{
+	display: block;
+}
+.tours-fixed .image .caption span.old-price{
+	font-size: 12px;
+}
+.tours-fixed .image .caption span.price{
+	font-size: 16px;
+	color: #fff000;
+}
+.tours-fixed h2{
+	font-size: 18px;
+	margin: 3px 0 0;
+	font-family: 'Dancing Script', cursive
+}
+.tours-fixed h2 a{
+	color: #fff;
+}
+.tours-fixed h2 a:hover{
+	text-decoration: underline;
+}
+.tours-fixed button.close-rooms{
+	position: absolute;
+	right:0;
+	background-color: #d2bd7f;
+	outline: none;
+	border: 0;
+	top: -31px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #fff;
+}
+
+.tours-fixed.closed{
+	height:0;
+	padding: 0;
+}
+
+/**/
+.spinner {
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	font-size: 10px;
+	margin: 0;
+	position: fixed;
+	top: 25px;
+	right: 15px;
+	z-index: 999;
+}
+
+.spinner > div {
+	background-color: #d2bd7f;
+	height: 100%;
+	width: 6px;
+	display: inline-block;
+
+	-webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+	animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+	0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+	20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+	0%, 40%, 100% {
+		transform: scaleY(0.4);
+		-webkit-transform: scaleY(0.4);
+	}  20% {
+		   transform: scaleY(1.0);
+		   -webkit-transform: scaleY(1.0);
+	   }
+}
+
+/**/

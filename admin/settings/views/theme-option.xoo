@@ -1,0 +1,138 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    <section class="content-header pull-left">
+        <h1>Tùy chỉnh giao diện</h1>
+    </section>
+
+    <div class="toolbar pull-right">
+        <button class="btn btn-primary" id="submitMainForm">
+            <i class="fa fa-check"></i>
+            Cập nhật
+        </button>
+    </div>
+    <div class="clearfix"></div>
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        <div class="row">
+        {#Sidebar#}
+        <div class="col-md-3">
+            <div class="box box-solid">
+                <div class="box-body no-padding">
+                    <ul class="nav nav-pills nav-stacked">
+                        {% set first = true %}
+                        {% for tabId, tab in themeOptions %}
+                            <li class="{{ "active" if first }}">
+                                <a href="#{{ tabId }}" aria-controls="{{ tabId }}" role="tab" data-toggle="tab">
+                                    <i class="{{ tab.icon }}"></i>
+                                    {{ tab.title }}
+                                </a>
+                            </li>
+                            {% set first = false %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {#Content#}
+        <div class="col-md-9">
+            <div class="tab-content theme-options">
+                {% set first = true %}
+                {% for tabId, tab in themeOptions %}
+                    <div role="tabpanel" class="tab-pane fade in {{ "active" if first }}" id="{{ tabId }}">
+                        {% for groupId, group in tab.fieldGroups %}
+                            <div class="box" data-groupid="{{ groupId }}">
+                                <div class="box-header with-border">
+                                    <p class="box-title">{{ group.title }}</p>
+                                    <div class="box-tools">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    {% if group.image %}
+                                        <p><img src="/options/{{ group.image }}" class="img-responsive"></p>
+                                        <br>
+                                    {% endif %}
+                                    {% for fieldId, field in group.fields %}
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h4 class="mg0">{{ field.name }}</h4>
+                                                <p>{{ field.desc }}</p>
+                                            </div>
+                                            <div class="col-md-8">
+                                                {% set fieldObj = {name: fieldId, placeholder: field.name, value: Options.data[fieldId]} %}
+
+                                                {#text#}
+                                                {% if field.type === 'text' %}
+                                                    {% if field.multiLang %}
+                                                        {% for language in languages %}
+                                                            {{ Form.Input({
+                                                                name: fieldId + '_' + language.code,
+                                                                placeholder: language.name,
+                                                                value: Options.data[fieldId][language.code]
+                                                            }) }}
+                                                        {% endfor %}
+                                                    {% else %}
+                                                        {{ Form.Input(fieldObj) }}
+                                                    {% endif %}
+                                                {#textarea#}
+                                                {% elif field.type === 'textarea' %}
+                                                    {% if field.multiLang %}
+                                                        {% for language in languages %}
+                                                            {{ Form.Textarea({
+                                                                name: fieldId + '_' + language.code,
+                                                                placeholder: language.name,
+                                                                value: Options.data[fieldId][language.code]
+                                                            }) }}
+                                                        {% endfor %}
+                                                    {% else %}
+                                                        {{ Form.Textarea(fieldObj) }}
+                                                    {% endif %}
+                                                {% elif field.type === 'image' %}
+                                                    {{ Form.OptionImageBox({
+                                                        inputName: fieldId,
+                                                        imagePath: Options.data[fieldId],
+                                                        targetId: fieldId + 'ImageBox'
+                                                    }) }}
+                                                {% elif field.type === 'galleryId' %}
+                                                    {{ Form.GalleryId({
+                                                        pathName: fieldId,
+                                                        value: Options.data[fieldId],
+                                                        galleryClass: 'small no-big-thumb',
+                                                        targetId: fieldId + '-Gallery',
+                                                        type: field.query
+                                                    }) }}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <hr class="mt10">
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% set first = false %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    </form>
+
+    {#Media Popup#}
+    {% include "../../media/views/media-popup.xoo" %}
+    {#Upload Popup#}
+    {% include "../../media/views/upload-popup.xoo" %}
+{% endblock %}
+
+{% block js %}
+    <script src="/admin/plugins/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "ul.sortable" ).sortable({
+                placeholder: "ui-sortable-placeholder"
+            });
+        });
+    </script>
+{% endblock %}

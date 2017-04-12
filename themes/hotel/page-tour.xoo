@@ -1,0 +1,55 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <!--Breadcrumb Section-->
+    <section id="breadcrumb-section" data-bg-img="/uploads/{{ Options['tour_image'] }}">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ Options['tour_title_2'][LANG] }}</div>
+                    <div class="sub-title">{{ Options['tour_title_2'][LANG] }}</div>
+                </div>
+            </div>
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li class="current"><a href="/{{ LANG }}/tours">Tour</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End of Breadcrumb Section-->
+
+    <!--Room Section-->
+    <section id="rooms-section">
+        <div class="inner-container container">
+            <div class="desc">{{ Options['tour_desc'][LANG] }}</div>
+
+            <div class="room-container clearfix">
+                {% for tour in tours %}
+                    <div class="room-box col-xs-6 col-md-4 animated-box" data-animation="fadeIn">
+                        <div class="inner-box" data-bg-img="/uploads/{{ tour.gallery[0].path + tour.gallery[0].ext }}">
+                            <a href="/{{ LANG }}/tours/{{ tour.slug }}" class="more-info"></a>
+                            <div class="caption">
+                                <div class="title">{{ tour.name }}</div>
+                                <div class="price">
+                                    <div class="title">{{ Options['tr_room_price_from'][LANG] }}</div>
+                                    <div class="value">{{ tour.fields.price }}</div>
+                                </div>
+                                <div class="desc">
+                                    <div class="inner-box">{{ tour.description }}</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- Pagination -->
+            {% include './partial/pagination.xoo' %}
+            <!-- End of Pagination -->
+
+        </div>
+    </section>
+    <!--End of Room Section-->
+{% endblock %}

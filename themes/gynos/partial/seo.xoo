@@ -1,0 +1,11 @@
+{#SEO FOR GOOGLE#}
+<meta name="title" content="{{ item.fields.seo_title }}">
+<meta name="description" content="{{ item.fields.seo_desc }}">
+
+{#SEO FOR FB#}
+<meta property="og:url"                content="{{ URL }}/" />
+<meta property="og:type"               content="{{ contentType }}" />
+<meta property="og:title"              content="{{ item.fields.seo_title }}" />
+<meta property="og:description"        content="{{ item.fields.seo_desc }}" />
+<meta property="og:image"              content="{{ URL + '/uploads/ '+ item.image.path + item.image.ext }}" />
+<meta property="og:image:secure_url"   content="{{ URL + '/uploads/ '+ item.image.path + item.image.ext }}" />

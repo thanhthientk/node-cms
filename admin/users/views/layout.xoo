@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ pageTitle if pageTitle else "Đăng nhập" }} - XOO CMS</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="/admin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/admin/plugins/iCheck/square/blue.css">
+    <link rel="stylesheet" href="/admin/plugins/toastr/toastr.min.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a href="/">XOO<b>CMS</b></a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="/admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="/admin/bootstrap/js/bootstrap.min.js"></script>
+<script src="/admin/plugins/toastr/toastr.min.js"></script>
+<script>
+    $(document).ready(function() {
+        {% if messages.errors %}
+        {% for error in messages.errors %}
+        toastr["error"]("", "{{ error.msg }}");
+        {% endfor %}
+        {% elif messages.success %}
+        toastr["success"]("", "{{ messages.success }}");
+        {% endif %}
+    })
+</script>
+</body>
+</html>

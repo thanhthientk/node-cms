@@ -1,0 +1,53 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <section id="breadcrumb-section" data-bg-img="/uploads/{{ Options['service_image'] }}">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ Options['service_title_1'][LANG] }}</div>
+                    <div class="sub-title">{{ Options['service_title_2'][LANG] }}</div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li class="current"><a href="/{{ LANG }}/services">{{ Options['service_title_1'][LANG] }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="past-events" style="padding-bottom: 20px;">
+        <div class="inner-container container">
+            <div class="event-container" style="margin-top: 80px;">
+                <ul class="event-main-box clearfix">
+                    {% for service in services %}
+                        <li class="item col-xs-6 col-md-4">
+                            <figure>
+                                <a href="/{{ LANG }}/services/{{ service.slug }}" class="more-details">
+                                    <img src="/uploads/{{ service.gallery[0].path + service.gallery[0].ext }}" alt="{{ service.name }}">
+                                </a>
+                                <figcaption>
+                                    <a href="/{{ LANG }}/services/{{ service.slug }}">
+                                    <span class="title-box">
+                                        <span class="title">{{ service.name }}</span>
+                                    </span>
+                                    <span class="desc">{{ service.description }}</span>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Pagination -->
+            {% include './partial/pagination.xoo' %}
+            <br>
+            <br>
+            <!-- End of Pagination -->
+        </div>
+    </section>
+{% endblock %}

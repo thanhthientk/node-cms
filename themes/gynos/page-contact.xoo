@@ -1,0 +1,71 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="content">
+        <div class="content-shoptop content-top1">
+            <div class="container">
+                <div class="contact-map">
+                    {{ Options['map'] |safe }}
+                </div>
+            </div>
+        </div>
+        <div class="main-content content-contact">
+            <div class="container">
+                <div class="bread-crumb">
+                    <a href="#">Home</a> <i class="fa fa-caret-right" aria-hidden="true"></i> <span>About</span>
+                </div>
+                <div class="contact-info-box">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="item-contact-box">
+                                <a href="#"><i class="fa fa-building" aria-hidden="true"></i></a>
+                                <label>82 Thạch Lam, Sơn Trà, Đà Nẵng</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-4 col-xs-12">
+                            <div>
+                                <div class="item-contact-box">
+                                    <a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="phone-box">
+                                    <h2>800-6688-999</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-4 col-xs-12">
+                            <div class="item-contact-box">
+                                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="mail-box">
+                                <a href="mailto:luckyshop@gmail.com">luckyshop@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="contact-form comment-form">
+                        <input type="hidden" name="type" value="contact">
+                        <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p><input required name="_field_name" type="text" placeholder="Tên của bạn *"/></p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <p><input required name="_field_phone" type="text" placeholder="Số điện thoại *"/></p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <p><input required name="_field_email" type="text" placeholder="Địa chỉ email *"/></p>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p><textarea required name="_field_message" cols="30" rows="10" placeholder="Lời nhắn"></textarea></p>
+                            </div>
+                        </div>
+                        <p>
+                            <input type="submit" value="Submit" class="btn-submit-form" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

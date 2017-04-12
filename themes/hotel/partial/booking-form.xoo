@@ -1,0 +1,86 @@
+<div class="modal fade" id="Booking" tabindex="-1" role="dialog" aria-labelledby="BookingModal">
+    <div class="modal-dialog" role="document">
+        <form id="BookingPopupForm" class="booking-form clearfix contact-form" action="#" style="margin-bottom: -10px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="BookingModal">{{ Options['tr_booking'][LANG] }}</h4>
+                </div>
+                <style type="text/css">
+                    .modal-body.main-availability-form form{
+                        margin-top: 0;
+                    }
+                    .modal-body.main-availability-form .booking-fields{
+                        margin-bottom: 20px;
+                    }
+                </style>
+                <div class="modal-body main-availability-form">
+                    <input type="hidden" name="type" value="booking">
+                    <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                    <div class="row" style="margin-bottom: 0">
+                        <div class="booking-fields rooms col-md-6">
+                            <select name="_field_room" required>
+                                <option value="">{{ Options['tr_select_room'][LANG] }}</option>
+                                {% for room in roomsInSelect %}
+                                    <option value="{{ room.name }}">{{ room.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="input-daterange">
+                            <div class="booking-fields col-md-6">
+                                <input placeholder="{{ Options['tr_checkin'][LANG] }}" class="datepicker-fields check-in" type="text"
+                                       name="start" required/>
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <div class="booking-fields col-md-6">
+                                <input placeholder="{{ Options['tr_checkout'][LANG] }}" class="datepicker-fields check-out" type="text"
+                                       name="end" required/>
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="booking-fields col-md-6">
+                            <select name="_field_adult" required>
+                                <option value="">{{ Options['tr_adult'][LANG] }}</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="booking-fields col-md-6">
+                            <select name="_field_child" required>
+                                <option value="">{{ Options['tr_child'][LANG] }}</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="booking-fields col-md-12">
+                            <label for="_field_name">{{ Options['tr_name'][LANG] }}</label>
+                            <input type="text" id="_field_name" name="_field_name" placeholder="{{ Options['tr_name'][LANG] }}" required>
+                        </div>
+                        <div class="booking-fields col-md-6">
+                            <label for="_field_phone">{{ Options['tr_phone'][LANG] }}</label>
+                            <input type="text" id="_field_phone" name="_field_phone" placeholder="{{ Options['tr_phone'][LANG] }}" required>
+                        </div>
+                        <div class="booking-fields col-md-6">
+                            <label for="_field_email">Email</label>
+                            <input type="email" id="_field_email" name="_field_email" placeholder="Email" required>
+                        </div>
+                        <div class="booking-fields col-md-12">
+                            <label for="_field_message">{{ Options['tr_message'][LANG] }}</label>
+                            <textarea name="_field_message" id="_field_message" rows="3" style="width: 100%"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="ravis-btn btn-type-2">{{ Options['tr_book_now'][LANG] }}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

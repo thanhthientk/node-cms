@@ -1,0 +1,47 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=665769960108750&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="content">
+        <div class="main-content content-single">
+            <div class="container">
+                <div class="bread-crumb">
+                    <a href="/">Trang chủ</a>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <a href="/blog">Bài viết</a>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <span>{{ post.name }}</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <h2 class="post-title">{{ post.name }}</h2>
+                        <div class="post-info">
+                            <p><label>Đăng vào lúc:</label> <span class="post-date">{{ _global.timeFormat(post.createdOn, 'DD/MM/YYYY') }}</span></p>
+                            <div class="share-social">
+                                <label>Chia sẻ:</label>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ URL }}/blog/{{ post.slug }}"><i class="fa fa-facebook-square"></i></a>
+                                <a href="https://plus.google.com/share?url={{ URL }}/blog/{{ post.slug }}" style="margin-right: 0;"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                            <div class="single-content">
+                                {{ post.content | safe }}
+                            </div>
+                            <div class="fb-comment">
+                                <div class="fb-comments" data-href="{{ URL }}/blog/{{ post.slug }}" data-numposts="5" data-width="100%" data-colorscheme="light"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {#Sidebar#}
+                    {% include './partial/blog-sidebar.xoo' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

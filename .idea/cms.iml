@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/public/admin/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/public/admin/dist/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/admin/dist/flags" />
+      <excludeFolder url="file://$MODULE_DIR$/public/admin/dist/img" />
+      <excludeFolder url="file://$MODULE_DIR$/public/admin/plugins" />
+      <excludeFolder url="file://$MODULE_DIR$/public/theme" />
+      <excludeFolder url="file://$MODULE_DIR$/public/uploads" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/themes/hotel/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

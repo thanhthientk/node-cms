@@ -1,0 +1,38 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    <section class="content-header">
+        <h1>
+            {% if reqQuery.type === 'booking' %}
+                Đặt phòng
+            {% elif reqQuery.type === 'newsletter' %}
+                Đăng ký nhận mail
+            {% elif reqQuery.type === 'contact' %}
+                Liên hệ
+            {% elif reqQuery.type === 'tour' %}
+                Đặt tour
+            {% endif %}
+        </h1>
+    </section>
+    <div class="toolbar">
+        <a href="/admin/{{ moduleInfo.slug }}?type={{ reqQuery.type }}" class="btn btn-info">
+            <i class="fa fa-refresh"></i>
+            Làm mới
+        </a>
+        <a class="btn btn-danger pull-right disabled" id="multipleDelete-btn">
+            <i class="fa fa-remove"></i>
+            Xóa
+        </a>
+    </div>
+
+    {#Table Content#}
+    <div class="box">
+        <div class="box-body table-responsive no-padding">
+            {% include "./../../views/partials/main-table.xoo" %}
+        </div>
+        <div class="box-footer clearfix">
+            {% include "../../views/partials/pagination.xoo" %}
+        </div>
+    </div>
+
+{% endblock %}

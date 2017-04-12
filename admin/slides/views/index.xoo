@@ -1,0 +1,16 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {{ super() }}
+
+    {#Table Content#}
+    <div class="box">
+        <div class="box-body table-responsive no-padding">
+            {% include "./../../views/partials/main-table.xoo" %}
+        </div>
+        <div class="box-footer clearfix">
+            {% include "../../views/partials/pagination.xoo" %}
+        </div>
+    </div>
+
+{% endblock %}

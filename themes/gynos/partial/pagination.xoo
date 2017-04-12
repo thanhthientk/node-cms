@@ -1,0 +1,17 @@
+{% set pages = paginated.pages %}
+{% set page = paginated.page %}
+{% set path = paginated.path %}
+{% set prevPage = page*1 - 1 %}
+{% set nextPage = page*1 + 1 %}
+
+{% if pages > 1 %}
+    <div class="sort-pagi-bar bottom clearfix">
+        <ul class="product-pagi-nav pull-right list-inline">
+            {% set count = 0 %}
+            {% for p in path %}
+                {% set count = count + 1 %}
+                <li><a href="{{ p }}" class="{{ 'active' if count == page }}"><span>{{ count }}</span></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

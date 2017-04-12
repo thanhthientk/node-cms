@@ -1,0 +1,70 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="content">
+        <div class="content-top1">
+            <div class="container">
+                <div class="banner-slider banner-slider1">
+                    <div class="wrap-item" data-pagination="false" data-autoplay="true" data-navigation="true" data-itemscustom="[[0,1]]">
+                        {% for slide in slides %}
+                            <div class="item-slider">
+                                <div class="banner-thumb"><a href="#"><img src="/uploads/{{ slide.image.path + slide.image.ext }}" alt="{{ slide.name }}" /></a></div>
+                                <div class="banner-info black text-center text-uppercase animated" data-animated="swing">
+                                    <h3 class="title30">{{ slide.fields.title1 }}</h3>
+                                    <h2 class="title60">{{ slide.fields.title2 }}</h2>
+                                    <div class="list-btn-banner">
+                                        <a href="{{ slide.fields.link }}" class="btn-rect radius">{{ slide.fields.button }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title-box1 text-center">
+                <h2 class="title30"><span>Sản phẩm</span></h2>
+            </div>
+            <div class="list-product1">
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            {% include './partial/produtc-item.xoo' %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <a href="/products" class="btn-product-loadmore border radius">Xem nhiều hơn</a>
+            </div>
+
+            <div class="title-box1 text-center" style="margin-top: 60px">
+                <h2 class="title30"><span>Tin tức</span></h2>
+            </div>
+            <div class="latest-news1">
+                <div class="latest-newslider">
+                    <div class="wrap-item" data-pagination="false" data-itemscustom="[[0,1],[600,2],[1024,3]]">
+                        {% for post in recentPosts %}
+                            <div class="item-latest-news">
+                                <div class="post-thumb">
+                                    <a href="/blog/{{ post.slug }}" class="post-thumb-link">
+                                        <img src="/uploads/{{ post.image.path + post.image.ext }}" alt="{{ post.name }}" width="370" height="247" />
+                                    </a>
+                                    <a href="/blog/{{ post.slug }}" class="post-thumb-zoom"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="post-info">
+                                    <h3 class="post-title"><a href="/blog/{{ post.slug }}">{{ post.name }}</a></h3>
+                                    <ul class="post-comment-date list-none">
+                                        <li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i><span>{{ _global.timeFormat(post.createdOn, 'DD/MM/YYYY') }}</span></li>
+                                    </ul>
+                                    <p class="desc">{{ _global.cropText(post.description, 90) }} ...</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <a href="/blog" class="btn-product-loadmore border radius">Xem thêm</a>
+                </div>
+            </div>
+            <!-- End Latest News -->
+        </div>
+    </div>
+{% endblock %}

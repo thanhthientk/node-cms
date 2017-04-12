@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d715c24a-500d-4c39-9e16-d7696db00ee6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/admin/_module/views/index.xoo" />
+    </disable_hints>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cms" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="express.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configs/express.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>select2</find>
+      <find>tr_bo</find>
+      <find>accessObjectByString</find>
+      <find>booking-form</find>
+      <find>let</find>
+      <find>map</find>
+      <find>book</find>
+      <find>BookingModal</find>
+      <find>daterang</find>
+      <find>#main-availability-form</find>
+      <find>&quot; id=&quot;</find>
+      <find>main-availability-form</find>
+      <find>daterange</find>
+      <find>start</find>
+      <find>language</find>
+      <find>generateUrlQuery</find>
+      <find>TaxonomiesBox</find>
+      <find>rc=&quot;imag</find>
+      <find>&quot;images/</find>
+      <find>singl</find>
+      <find>image</find>
+      <find>'page'</find>
+      <find>sta</find>
+      <find>tax</find>
+      <find>&quot;image</find>
+      <find>&quot;images</find>
+      <find>image-thumb</find>
+      <find>uploadPopup</find>
+      <find>#ff9677</find>
+      <find>multipleDelete-btn</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#c0392b</replace>
+      <replace>#95193d</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admin/views/partials/forms.xoo" />
+        <option value="$PROJECT_DIR$/admin/posts/index.js" />
+        <option value="$PROJECT_DIR$/admin/products/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/admin/products/index.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/single-post.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/pagination.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/product-sidebar.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/produtc-item.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/blog-sidebar.xoo" />
+        <option value="$PROJECT_DIR$/frontend/posts/routes.js" />
+        <option value="$PROJECT_DIR$/themes/single-page.xoo" />
+        <option value="$PROJECT_DIR$/frontend/index/routes.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/assets/js/theme.js" />
+        <option value="$PROJECT_DIR$/admin/contacts/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/header.xoo" />
+        <option value="$PROJECT_DIR$/frontend/index/controllers.js" />
+        <option value="$PROJECT_DIR$/configs/nunjucks/nunjucks-global.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/index.xoo" />
+        <option value="$PROJECT_DIR$/admin/settings/views/theme-option.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/footer.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/single-page.xoo" />
+        <option value="$PROJECT_DIR$/admin/media/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/admin/media/views/create.xoo" />
+        <option value="$PROJECT_DIR$/admin/views/partials/main-table.xoo" />
+        <option value="$PROJECT_DIR$/admin/settings/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/routes.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/single-blog.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/page-product.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/page-blog.xoo" />
+        <option value="$PROJECT_DIR$/frontend/posts/controllers.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/page-contact.xoo" />
+        <option value="$PROJECT_DIR$/admin/settings/theme-options.js" />
+        <option value="$PROJECT_DIR$/admin/posts/views/create.xoo" />
+        <option value="$PROJECT_DIR$/admin/pages/views/create.xoo" />
+        <option value="$PROJECT_DIR$/admin/products/views/create.xoo" />
+        <option value="$PROJECT_DIR$/admin/posts/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/admin/pages/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/themes/gynos/layout.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/partial/seo.xoo" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/themes/gynos/single-product.xoo" />
+        <option value="$PROJECT_DIR$/themes/gynos/assets/css/color.css" />
+        <option value="$PROJECT_DIR$/themes/gynos/assets/css/theme.css" />
+        <option value="$PROJECT_DIR$/admin/users/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/admin/roles/controllers/index.controller.js" />
+        <option value="$PROJECT_DIR$/public/admin/dist/js/custom.js" />
+        <option value="$PROJECT_DIR$/configs/email.js" />
+        <option value="$PROJECT_DIR$/admin/dashboard/views/index.xoo" />
+        <option value="$PROJECT_DIR$/admin/views/partials/header.xoo" />
+        <option value="$PROJECT_DIR$/admin/views/layout.xoo" />
+        <option value="$PROJECT_DIR$/configs/express.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gynos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gynos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gynos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="themes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gynos">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="javascript.nodejs.core.library.configured.version" value="6.10.0" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="SearchEverywhereHistoryKey" value="layou&#9;FILE&#9;file://D:/Projects/gynos/admin/views/layout.xoo&#10;cus&#9;FILE&#9;file://D:/Projects/gynos/public/admin/dist/js/custom.js&#10;them&#9;FILE&#9;file://D:/Projects/gynos/themes/gynos/assets/css/theme.css&#10;layo&#9;FILE&#9;file://D:/Projects/gynos/themes/gynos/layout.xoo&#10;main&#9;FILE&#9;file://D:/Projects/gynos/admin/views/partials/main-table.xoo&#10;upload&#9;FILE&#9;file://D:/Projects/gynos/public/admin/dist/js/upload.js&#10;theme&#9;FILE&#9;file://D:/Projects/gynos/admin/settings/theme-options.js&#10;header&#9;FILE&#9;file://D:/Projects/gynos/themes/gynos/partial/header.xoo&#10;theme-&#9;FILE&#9;file://D:/Projects/gynos/admin/settings/theme-options.js&#10;nun&#9;FILE&#9;file://D:/Projects/gynos/configs/nunjucks/nunjucks-global.js&#10;theme.js&#9;FILE&#9;file://D:/Projects/gynos/themes/gynos/assets/js/theme.js&#10;glo&#9;FILE&#9;file://D:/Projects/gynos/configs/nunjucks/nunjucks-global.js&#10;form&#9;FILE&#9;file://D:/Projects/gynos/admin/views/partials/forms.xoo&#10;forms&#9;FILE&#9;file://D:/Projects/cms/admin/views/partials/forms.xoo&#10;ex&#9;FILE&#9;file://D:/Projects/cms/configs/express.js&#10;app.js&#9;FILE&#9;file://D:/Projects/cms/app.js&#10;index&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/index.xoo&#10;inde&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/index.xoo&#10;sty&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/assets/css/styles-light.css&#10;boo&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/partial/booking-form.xoo&#10;tem&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/assets/js/template.js&#10;head&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/partial/header.xoo&#10;temp&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/assets/js/template.js&#10;layout&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/layout.xoo&#10;single-t&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/single-tour.xoo&#10;custom&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/assets/css/custom.css&#10;heade&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/partial/header.xoo&#10;sing&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/single-room.xoo&#10;single-to&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/single-tour.xoo&#10;single&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/single-room.xoo&#10;room&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/page-room.xoo&#10;contac&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/page-contact.xoo&#10;foot&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/partial/footer.xoo&#10;foo&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/partial/footer.xoo&#10;cu&#9;FILE&#9;file://D:/Projects/cms/public/admin/dist/js/custom.js&#10;exp&#9;FILE&#9;file://D:/Projects/cms/configs/express.js&#10;pagin&#9;FILE&#9;file://D:/Projects/cms/admin/views/partials/pagination.xoo&#10;c&#9;FILE&#9;file://D:/Projects/cms/themes/hotel/assets/css/custom.css&#10;nu&#9;FILE&#9;file://D:/Projects/cms/configs/nunjucks/nunjucks-global.js&#10;fo&#9;FILE&#9;file://D:/Projects/cms/admin/views/partials/forms.xoo&#10;for&#9;FILE&#9;file://D:/Projects/cms/admin/views/partials/forms.xoo&#10;global&#9;FILE&#9;file://D:/Projects/cms/configs/globals/global-functions.js&#10;index.&#9;FILE&#9;file://D:/Projects/cms/admin/languages/actions/index.action.js&#10;pack&#9;FILE&#9;file://D:/Projects/cms/package.json&#10;error&#9;FILE&#9;file://D:/Projects/cms/configs/errors-handler.js&#10;index.ac&#9;FILE&#9;file://D:/Projects/cms/admin/languages/actions/index.action.js&#10;glob&#9;FILE&#9;file://D:/Projects/cms/configs/globals/global-variables.js&#10;slug&#9;FILE&#9;file://D:/Projects/cms/libraries/slug.js&#10;form.xo&#9;FILE&#9;file://D:/Projects/cms/admin/views/partials/forms.xoo" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Twig" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\gynos\themes\gynos" />
+      <recent name="D:\Projects\cms\public" />
+      <recent name="D:\Projects\cms\admin\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\gynos\admin" />
+      <recent name="D:\Projects\cms\admin" />
+      <recent name="D:\Projects\cms\admin\pages" />
+      <recent name="D:\Projects\cms\admin\posts\post_types" />
+      <recent name="D:\Projects\cms\themes\blog" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" value="D:\Projects\cms\features" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d715c24a-500d-4c39-9e16-d7696db00ee6" name="Default" comment="" />
+      <created>1488867826818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488867826818</updated>
+      <workItem from="1488867828704" duration="6984000" />
+      <workItem from="1488887983816" duration="722000" />
+      <workItem from="1488955873403" duration="38000" />
+      <workItem from="1488956049702" duration="2267000" />
+      <workItem from="1488958334307" duration="9768000" />
+      <workItem from="1488974745155" duration="32000" />
+      <workItem from="1488974820060" duration="4365000" />
+      <workItem from="1488983219238" duration="3739000" />
+      <workItem from="1489022823158" duration="11392000" />
+      <workItem from="1489037227113" duration="15228000" />
+      <workItem from="1489054898203" duration="10058000" />
+      <workItem from="1489112218145" duration="7760000" />
+      <workItem from="1489127604431" duration="11973000" />
+      <workItem from="1489146570138" duration="7711000" />
+      <workItem from="1489196438914" duration="21955000" />
+      <workItem from="1489224718963" duration="3903000" />
+      <workItem from="1489469535320" duration="16048000" />
+      <workItem from="1489492831313" duration="6179000" />
+      <workItem from="1489543228260" duration="8000" />
+      <workItem from="1489544049664" duration="9000" />
+      <workItem from="1489567568670" duration="6932000" />
+      <workItem from="1489628899965" duration="452000" />
+      <workItem from="1489639778944" duration="19608000" />
+      <workItem from="1489718036078" duration="5347000" />
+      <workItem from="1489978230017" duration="20096000" />
+      <workItem from="1490062056235" duration="18732000" />
+      <workItem from="1490089736530" duration="792000" />
+      <workItem from="1490145756288" duration="42000" />
+      <workItem from="1490145870784" duration="13518000" />
+      <workItem from="1490163148341" duration="4048000" />
+      <workItem from="1490167799805" duration="155000" />
+      <workItem from="1490170734279" duration="11450000" />
+      <workItem from="1490233630088" duration="25783000" />
+      <workItem from="1490321372925" duration="218000" />
+      <workItem from="1490321712151" duration="161000" />
+      <workItem from="1490321893563" duration="23777000" />
+      <workItem from="1490406168093" duration="16816000" />
+      <workItem from="1490504469518" duration="118000" />
+      <workItem from="1490504635528" duration="729000" />
+      <workItem from="1490527794240" duration="4678000" />
+      <workItem from="1490579472246" duration="27897000" />
+      <workItem from="1490621489912" duration="3799000" />
+      <workItem from="1490666991849" duration="727000" />
+      <workItem from="1490668847285" duration="9821000" />
+      <workItem from="1490682164894" duration="14246000" />
+      <workItem from="1490752384688" duration="7601000" />
+      <workItem from="1490779289893" duration="2203000" />
+      <workItem from="1490784005904" duration="1065000" />
+      <workItem from="1490789256453" duration="4957000" />
+      <workItem from="1490842396461" duration="550000" />
+      <workItem from="1490844298582" duration="2071000" />
+      <workItem from="1490857551717" duration="1983000" />
+      <workItem from="1490865195879" duration="2956000" />
+      <workItem from="1490883735750" duration="1382000" />
+      <workItem from="1490924485771" duration="8000" />
+      <workItem from="1490929816709" duration="13981000" />
+      <workItem from="1490949472303" duration="1743000" />
+      <workItem from="1490960962710" duration="5986000" />
+      <workItem from="1491016429045" duration="16633000" />
+      <workItem from="1491050010160" duration="7642000" />
+      <workItem from="1491099981411" duration="31000" />
+      <workItem from="1491117065404" duration="24310000" />
+      <workItem from="1491184032244" duration="26567000" />
+      <workItem from="1491225083879" duration="5698000" />
+      <workItem from="1491268630807" duration="1038000" />
+      <workItem from="1491270782024" duration="25524000" />
+      <workItem from="1491377320077" duration="6847000" />
+      <workItem from="1491529394986" duration="603000" />
+      <workItem from="1491546453738" duration="5044000" />
+      <workItem from="1491554700306" duration="683000" />
+      <workItem from="1491717775959" duration="17000" />
+      <workItem from="1491799887065" duration="15104000" />
+      <workItem from="1491876912611" duration="19855000" />
+      <workItem from="1491962903015" duration="7791000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="579954000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1420205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32882884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2912913" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="101" y="138" width="1163" height="492" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="25" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/themes/gynos/assets/js/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/posts/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/nunjucks/nunjucks-global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="158" column="27" lean-forward="true" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/settings/views/theme-option.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="48" column="131" lean-forward="false" selection-start-line="48" selection-start-column="131" selection-end-line="48" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/partial/header.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/partial/footer.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="38" column="81" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/index.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="56" column="131" lean-forward="false" selection-start-line="56" selection-start-column="107" selection-end-line="56" selection-end-column="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/single-page.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/media/views/index.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/media/views/create.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/media/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/posts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="105" column="22" lean-forward="false" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/dist/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/media/views/upload-popup.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/partials/main-table.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="84" column="43" lean-forward="true" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/slides/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/settings/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#174#583#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/single-blog.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="28" column="95" lean-forward="false" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
+          <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/page-product.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/page-blog.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/page-contact.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/settings/theme-options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+          <folding>
+            <element signature="e#153#1054#0" expanded="false" />
+            <element signature="e#1077#2360#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/posts/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="87" column="53" lean-forward="false" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+          <folding>
+            <element signature="e#253#620#0" expanded="false" />
+            <element signature="e#796#1292#0" expanded="false" />
+            <element signature="e#1372#1921#0" expanded="false" />
+            <element signature="e#1975#2431#0" expanded="false" />
+            <element signature="e#2487#3350#0" expanded="false" />
+            <element signature="e#3418#4023#0" expanded="false" />
+            <element signature="e#4080#4871#0" expanded="false" />
+            <element signature="e#4930#5699#0" expanded="false" />
+            <element signature="e#5766#6069#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/products/views/create.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pages/views/create.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/posts/views/create.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/products/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/products/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="134" column="8" lean-forward="true" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="50" />
+          <folding>
+            <element signature="e#209#2083#0" expanded="false" />
+            <element signature="e#2143#3073#0" expanded="false" />
+            <element signature="e#3123#3385#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pages/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="165" column="8" lean-forward="true" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+          <folding>
+            <element signature="e#222#2080#0" expanded="false" />
+            <element signature="e#2143#3070#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/layout.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/partial/seo.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="110" lean-forward="false" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/assets/css/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5245">
+          <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/single-product.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/gynos/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="817" column="1" lean-forward="true" selection-start-line="817" selection-start-column="1" selection-end-line="817" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/posts/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding>
+            <element signature="e#221#2483#0" expanded="false" />
+            <element signature="e#2543#3670#0" expanded="false" />
+            <element signature="e#3720#3979#0" expanded="false" />
+            <element signature="e#4029#4770#0" expanded="false" />
+            <element signature="e#4819#5276#0" expanded="false" />
+            <element signature="e#5317#5961#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/dist/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="90" column="44" lean-forward="false" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+          <folding>
+            <element signature="e#3981#4023#0" expanded="false" />
+            <element signature="e#4061#4410#0" expanded="false" />
+            <element signature="e#5163#5373#0" expanded="false" />
+            <element signature="e#5690#8180#0" expanded="false" />
+            <element signature="e#8242#8802#0" expanded="false" />
+            <marker date="1491969131655" expanded="true" signature="7070:7383" ph="..." />
+            <marker date="1491969131655" expanded="true" signature="7779:8084" ph="..." />
+            <marker date="1491969131655" expanded="true" signature="10131:10317" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/roles/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="157" column="25" lean-forward="true" selection-start-line="157" selection-start-column="25" selection-end-line="157" selection-end-column="25" />
+          <folding>
+            <element signature="e#239#1203#0" expanded="false" />
+            <element signature="e#1247#1775#0" expanded="false" />
+            <element signature="e#1835#2682#0" expanded="false" />
+            <element signature="e#2846#3469#0" expanded="false" />
+            <element signature="e#3507#3758#0" expanded="false" />
+            <element signature="e#3798#4360#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/contacts/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding>
+            <element signature="e#217#1811#0" expanded="false" />
+            <element signature="e#1871#2683#0" expanded="false" />
+            <element signature="e#2724#2771#0" expanded="false" />
+            <element signature="e#2810#3433#0" expanded="false" />
+            <element signature="e#3471#3689#0" expanded="false" />
+            <element signature="e#3729#4291#0" expanded="false" />
+            <element signature="e#4332#4778#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/partials/header.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard/views/index.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/users/controllers/index.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="448" column="25" lean-forward="false" selection-start-line="448" selection-start-column="25" selection-end-line="448" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/email.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/layout.xoo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/env/.env.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/env/.env.dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,46 @@
+<div id="header">
+    <div class="main-header header-ontop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="logo logo1">
+                        <h1 class="hidden">Lucky Html Theme</h1>
+                        <a href="/"><img src="/gynos/assets/images/home1/logo.png" alt=""></a>
+                    </div>
+                    <nav class="main-nav main-nav1">
+                        <ul class="main-menu">
+                            <li class="current-menu-item">
+                                <a href="/">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="/page/ve-chung-toi">Về chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="/products">Sản phẩm</a>
+                            </li>
+                            <li>
+                                <a href="/blog">Tin tức</a>
+                            </li>
+                            <li>
+                                <a href="/contact">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="toggle-mobile-menu"><span></span></a>
+                    </nav>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="wrap-search-login" style="padding-right: 0">
+                        <div class="search-form">
+                            <form action="/products">
+                                <input placeholder="Tìm kiếm sản phẩm" name="s" type="text" value="{{ reqQuery.s }}">
+                                <div class="submit-form">
+                                    <input value="" type="submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

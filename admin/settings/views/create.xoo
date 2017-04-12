@@ -1,0 +1,16 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {{ super() }}
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        {# Form inputs#}
+        <div class="box box-primary">
+            <div class="box-body">
+                {{ Form.Input({label: 'Tên', name: 'name', value: item.name, required: true}) }}
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+<div id="footer">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="logo-footer">
+                        <a href="index.html"><img src="/gynos/assets/images/home1/logo.png" alt="" /></a>
+                    </div>
+                    <div class="contact-footer">
+                        <p>{{ Options['footer_address'] }}</p>
+                        <p>Điện thoại: {{ Options['footer_phone'] }}</p>
+                        <p>E-mail: <a href="mailto:{{ Options['footer_email'] }}">{{ Options['footer_email'] }}</a></p>
+                    </div>
+                    <div class="social-footer">
+                        <a href="{{ Options['fb'] }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="{{ Options['gg'] }}"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="{{ Options['yt'] }}"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-nav">
+                        <h2 class="sub-title">{{ Options['footer_menu'] }}</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="/page/ve-chung-toi">Về chúng tôi</a></li>
+                            <li><a href="/products">Sản phẩm</a></li>
+                            <li><a href="/blog">Tin tức</a></li>
+                            <li><a href="/contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="newsletter-footer">
+                        <h2 class="sub-title">{{ Options['footer_newsletter'] }}</h2>
+                        <p>{{ Options['footer_newsletter_desc'] }}</p>
+                        <form class="contact-form">
+                            <input type="hidden" name="type" value="newsletter">
+                            <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                            <input class="border radius" name="_field_email" type="email" placeholder="Email" required>
+                            <input class="btn-link-default radius" value="đăng ký" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom1">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        {{ Options['footer_sign_left'] | safe }}
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                        {{ Options['footer_sign_right'] | safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

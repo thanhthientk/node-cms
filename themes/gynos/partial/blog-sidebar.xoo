@@ -1,0 +1,12 @@
+<div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="sidebar-right sidebar-blog sidebar-product">
+        <div class="widget widget-category">
+            <h2 class="widget-title sub-title">Danh mục</h2>
+            <ul>
+                {% for category in categories %}
+                    <li><a href="/blog/category/{{ category.slug }}">{{ category.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

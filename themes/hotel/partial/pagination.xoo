@@ -1,0 +1,17 @@
+{% set pages = paginated.pages %}
+{% set page = paginated.page %}
+{% set path = paginated.path %}
+{% set prevPage = page*1 - 1 %}
+{% set nextPage = page*1 + 1 %}
+
+{% if pages > 1 %}
+    <div class="pagination-box">
+        <ul class="list-inline">
+            {% set count = 0 %}
+            {% for p in path %}
+                {% set count = count + 1 %}
+                <li class="{{ 'active' if count == page }}"><a href="{{ p }}"><span>{{ count }}</span></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

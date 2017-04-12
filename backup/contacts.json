@@ -1,0 +1,7 @@
+{"_id":{"$oid":"58e30bef30e07b242ce73bc8"},"type":"newsletter","fields":{"email":"thanhthientk69@gmail.com"},"createdOn":{"$date":"2017-04-04T02:58:55.678Z"},"__v":0}
+{"_id":{"$oid":"58e310845030ef19e40248e2"},"type":"newsletter","fields":{"email":"thanhthientk@gmail.com"},"createdOn":{"$date":"2017-04-04T03:18:28.819Z"},"__v":0}
+{"_id":{"$oid":"58e3109f5030ef19e40248e3"},"type":"newsletter","fields":{"email":"thanhthientk@gmail.com"},"createdOn":{"$date":"2017-04-04T03:18:55.586Z"},"__v":0}
+{"_id":{"$oid":"58e3115a98612e07a82c1837"},"type":"newsletter","fields":{"email":"thanhthientk@gmail.com"},"createdOn":{"$date":"2017-04-04T03:22:02.673Z"},"__v":0}
+{"_id":{"$oid":"58e31b497f1d770a7ce0488a"},"type":"contact","fields":{"message":"thanhthientk69@gmail.com","email":"thanhthientk69@gmail.com","phone":"1685883294","name":"Lê Văn Thiện"},"createdOn":{"$date":"2017-04-04T04:04:25.534Z"},"__v":0}
+{"_id":{"$oid":"58e32c045386860cdcb2e0bb"},"type":"booking","fields":{"message":"","email":"thanhthientk69@gmail.com","phone":"1685883294","name":"Lê Văn Thiện","child":"2","adult":"1","end":"06/04/2017","start":"05/04/2017","room":"Double Room"},"createdOn":{"$date":"2017-04-04T05:15:48.636Z"},"__v":0}
+{"_id":{"$oid":"58e33fb35386860cdcb2e0bc"},"type":"tour","fields":{"phone":"1685883294","email":"thanhthientk69@gmail.com","name":"Lê Văn Thiện"},"createdOn":{"$date":"2017-04-04T06:39:47.946Z"},"__v":0}

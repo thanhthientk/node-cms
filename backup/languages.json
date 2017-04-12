@@ -1,0 +1,4 @@
+{"_id":{"$oid":"58d74db53035f21534a5e814"},"name":"Tiếng Việt","createdBy":"58bfd13a753985dc8b735f49","createdOn":{"$date":"2017-03-26T05:12:21.193Z"},"__v":0,"flag":"vn","code":"vn","status":true}
+{"_id":{"$oid":"58d88d945288b91254d27bf0"},"name":"English","code":"en","flag":"us","createdBy":"58bfd13a753985dc8b735f49","createdOn":{"$date":"2017-03-27T03:57:08.537Z"},"status":true,"__v":0}
+{"_id":{"$oid":"58d8d49894501f1e50e8c499"},"name":"Korea","code":"kr","flag":"kr","createdBy":"58bfd13a753985dc8b735f49","createdOn":{"$date":"2017-03-27T09:00:08.341Z"},"status":false,"__v":0}
+{"_id":{"$oid":"58db2b71be753c0e541df1e2"},"name":"Australia","code":"au","flag":"au","createdBy":"58bfd13a753985dc8b735f49","createdOn":{"$date":"2017-03-29T03:35:13.167Z"},"status":false,"__v":0}

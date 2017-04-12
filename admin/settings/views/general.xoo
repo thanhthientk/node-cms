@@ -1,0 +1,51 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    <section class="content-header pull-left">
+        <h1>Cài đặt chung</h1>
+    </section>
+
+    <div class="toolbar pull-right">
+        <button class="btn btn-primary" id="submitMainForm">
+            <i class="fa fa-check"></i>
+            Cập nhật
+        </button>
+    </div>
+    <div class="clearfix"></div>
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        {#Thông tin chung#}
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 setting-title">
+                <h4>Thông tin website</h4>
+                <p>Thông tin được sử dụng để khách hàng liên hệ đến bạn.</p>
+            </div>
+            <div class="col-sm-9 col-xs-12">
+                <div class="box box-solid">
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Tên website', name: 'websiteName', value: item.websiteName, placeholder: 'Nhập tên website'}) }}
+                        {{ Form.Input({label: 'Tiêu đề trang chủ', name: 'homeTitle', value: item.homeTitle, placeholder: 'Nhập tiêu đề trang chủ'}) }}
+                        {{ Form.Textarea({label: 'Mô tả trang chủ', name: 'homeDescription', value: item.homeDescription, placeholder: 'Nhập một mô tả để nâng cao xếp hạng trên công cụ tìm kiếm như Google.'}) }}
+                        {{ Form.Input({label: 'Email thông báo', type: 'email', name: 'adminEmail', value: item.adminEmail, placeholder: 'Nhập email gửi thông báo'}) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#Google Analytics#}
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 setting-title">
+                <h4>Google Analytics</h4>
+                <p>Nhập mã Google Analytics để bạn có thể theo dõi các thống kê về truy cập của website.</p>
+            </div>
+            <div class="col-sm-9 col-xs-12">
+                <div class="box box-solid">
+                    <div class="box-body">
+                        {{ Form.Textarea({label: 'Mã Google Analytics', name: 'googleAnalytics', value: item.googleAnalytics, rows: 2, placeholder: 'Nhập mã Google Analytics tại đây'}) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

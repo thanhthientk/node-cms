@@ -1,0 +1,45 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <section id="breadcrumb-section" data-bg-img="/uploads/{{ Options['gallery_image'] }}">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">{{ Options['gallery_title_1'][LANG] }}</div>
+                    <div class="sub-title">{{ Options['gallery_title_2'][LANG] }}</div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="/{{ LANG }}">{{ Options['tr_home'][LANG] }}</a></li>
+                    <li class="current"><a href="/{{ LANG }}/gallery">{{ Options['gallery_title_1'][LANG] }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="inner-container container">
+            <!-- Gallery Container -->
+            <div class="gallery-container">
+                <ul class="image-main-box clearfix">
+                    {% for image in images %}
+                        <li class="item col-xs-6 col-md-4 lobby">
+                            <figure>
+                                <img src="/uploads/{{ image.path + image.ext }}" alt="{{ image.name }}">
+                                <a href="/uploads/{{ image.path + image.ext }}" class="more-details" data-title="{{ image.fields['caption_' + LANG] }}">{{ image.fields['caption_' + LANG] }}</a>
+                                <figcaption>
+                                    <h4>{{ image.fields['caption_' + LANG] }}</h4>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <!-- Pagination -->
+                {% include './partial/pagination.xoo' %}
+                <!-- End of Pagination -->
+            </div>
+        </div>
+    </section>
+{% endblock %}

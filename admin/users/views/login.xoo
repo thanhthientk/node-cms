@@ -1,0 +1,30 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div class="login-box-body">
+        <p class="login-box-msg">Đăng nhập vào hệ thống</p>
+        <form method="post">
+            <input type="hidden" name="_csrf" value={{ _csrf }}>
+            <div class="form-group has-feedback">
+                <input type="email" name="email" class="form-control" placeholder="Email">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" name="password" class="form-control" placeholder="Mật khẩu">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey={{ recaptchaSiteKey }}></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <a href="/admin/forgot-password">Quên mật khẩu?</a>
+                </div>
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Đăng nhập</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}

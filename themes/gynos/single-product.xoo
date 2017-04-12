@@ -1,0 +1,99 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <div id="content">
+        <div class="main-content">
+            <div class="container">
+                <div class="bread-crumb">
+                    <a href="/">Trang chủ</a>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <a href="/products">Sản phẩm</a>
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    <span>{{ product.name }}</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <div class="content-product-detail has-sidebar">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="product-gallery">
+                                        <div class="clearfix">
+                                            <ul class="bxslider">
+                                                {% for image in product.gallery %}
+                                                    <li><img src="/uploads/{{ image.path + image.ext }}" /></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="info-product-detail">
+                                        <h2 class="title-product-detail">{{ product.name }}</h2>
+                                        <div class="product-rate" style="margin-bottom: 10px;">
+                                            <div class="product-rating" style="width:100%"></div>
+                                        </div>
+                                        <p class="desc">{{ product.description }}</p>
+                                        <div class="wrap-cart-qty">
+                                            <div class="product-price">
+                                                <del><span>{{ product.fields.old_price }}</span></del>
+                                                <ins><span>{{ product.fields.price }}</span></ins>
+                                            </div>
+                                        </div>
+                                        <div class="product-gallery">
+                                            <ul class="list-inline share-social" style="text-align: left;">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://gynos.vn/products/{{ product.slug }}" class="share-face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://plus.google.com/share?url=http://gynos.vn/products/{{ product.slug }}" class="share-pint"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Product Top -->
+                            <div class="detail-product-tab">
+                                <!-- Nav tabs -->
+                                <div class="nav-tabs-default">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#home" data-toggle="tab">Thông tin sản phẩm</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home">
+                                        <div class="content-tags-detail single-content">
+                                            {{ product.content | safe }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Product Tab -->
+                            <div class="relate-product">
+                                <!-- Nav tabs -->
+                                <div class="nav-tabs-default">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#relate-product" data-toggle="tab">Có thể bạn quan tâm</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Tab panes -->
+                                <div class="product-related-slider">
+                                    <div class="wrap-item" data-pagination="false" data-navigation="true" data-itemscustom="[[0,1],[480,2],[1024,3]]">
+                                        {% for product in relatedProducts %}
+                                            {% include './partial/produtc-item.xoo' %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {#Sidebar#}
+                    {% include './partial/product-sidebar.xoo' %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+{% endblock %}

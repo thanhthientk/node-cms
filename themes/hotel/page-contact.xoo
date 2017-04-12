@@ -1,0 +1,59 @@
+{% extends './layout.xoo' %}
+
+{% block content %}
+    <!--Breadcrumb Section-->
+    <section id="breadcrumb-section" data-bg-img="/hotel/assets/img/breadcrumb.jpg">
+        <div class="inner-container container">
+            <div class="ravis-title">
+                <div class="inner-box">
+                    <div class="title">Contact Us</div>
+                    <div class="sub-title">Some description about your hotel</div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="../index-2.html">Home</a></li>
+                    <li class="current"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End of Breadcrumb Section-->
+
+    <!--Contact Section-->
+    <section id="contact-section">
+        <div class="inner-container container">
+            <div class="b-sec clearfix">
+                <div class="contact-form col-md-6">
+                    <form action="#" class="contact-form" style="padding: 0;">
+                        <input type="hidden" name="type" value="contact">
+                        <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                        <div class="field-row">
+                            <input type="text" name="_field_name" placeholder="{{ Options['tr_name'][LANG] }}" required>
+                        </div>
+                        <div class="field-row">
+                            <input type="text" name="_field_phone" placeholder="{{ Options['tr_phone'][LANG] }}" required>
+                        </div>
+                        <div class="field-row">
+                            <input type="email" name="_field_email" placeholder="Email" required>
+                        </div>
+                        <div class="field-row">
+                            <textarea name="_field_message" placeholder="{{ Options['tr_message'][LANG] }}" required></textarea>
+                        </div>
+                        <div class="field-row">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div id="google-map" class="col-md-6" data-marker="/hotel/assets/img/marker.png"></div>
+            </div>
+        </div>
+    </section>
+    <!--End of Contact Section-->
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;key=AIzaSyBFqY_VBzRTQTtzbOImGqLkJFHUwM7T-4g"></script>
+{% endblock %}

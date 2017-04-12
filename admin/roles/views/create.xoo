@@ -1,0 +1,40 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {{ super() }}
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        {# Form inputs#}
+        <div class="box box-primary">
+            <div class="box-body">
+                {{ Form.Input({label: 'Tên', name: 'name', value: item.name, required: true}) }}
+                {{ Form.Textarea({label: 'Ghi chú', name: 'description', value: item.description}) }}
+                <div class="form-group">
+                    <label>Chọn các quyền cho nhóm quyền này:</label>
+                    <div class="row">
+                        {% for module in modules %}
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Module: {{ module.name }}</h4>
+                                {% for index, permission in module.permissions %}
+                                    <div class="role-checkbox">
+                                        <label>
+                                            <input
+                                                type="checkbox"
+                                                name="permissions"
+                                                value="{{ permission.slug }}"
+                                                {{ "checked" if (controller === 'edit' and logged_user.role.permissions.indexOf(permission.slug) > -1) }}
+                                            />
+                                            {{ permission.title }}
+                                        </label>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

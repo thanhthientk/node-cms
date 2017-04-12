@@ -1,0 +1,277 @@
+{% macro Csrf(_csrf) %}
+    <input type="hidden" name="_csrf" value="{{ _csrf }}">
+{% endmacro %}
+
+{% macro Label(obj) %}
+    {% if obj.label %}
+        <label for="{{ obj.name }}">
+            {{ obj.label }}
+            {% if obj.required %}
+                <span class="required">*</span>
+            {% endif %}
+        </label>
+    {% endif %}
+{% endmacro %}
+
+{% macro Input(obj = {label: '', name: '', type: '', value: '', requied: false, groupClass: ''}) %}
+    <div class="form-group {{ obj.groupClass }}">
+        {{ Label(obj) }}
+        <input
+            id="{{ obj.name }}"
+            name="{{ obj.name }}"
+            type="{{ obj.type }}"
+            class="form-control"
+            autocomplete="off"
+            value="{{ obj.value }}"
+            placeholder="{{ obj.placeholder }}"
+            {{ 'readonly' if obj.readonly }}
+        />
+    </div>
+{% endmacro %}
+
+{% macro Textarea(obj = {label: '', name: '', value: '', rows: 4, requied: false}) %}
+    <div class="form-group">
+        {{ Label(obj) }}
+        <textarea
+                id="{{ obj.name }}"
+                name="{{ obj.name }}"
+                class="form-control"
+                placeholder="{{ obj.placeholder }}"
+                rows="{{ obj.rows if obj.rows else 4}}">{{ obj.value }}</textarea>
+    </div>
+{% endmacro %}
+
+{% macro Select(obj = {label: '', name: '',  value: '', items: [], fieldDisplay: 'name', key: 'id', requied: false}) %}
+    {% set fieldDisplay = obj.fieldDisplay if obj.fieldDisplay else 'name' %}
+    {% set key = obj.key if obj.key else 'id' %}
+    <div class="form-group">
+        {{ Label(obj) }}
+        <select id="{{ obj.name }}" name="{{ obj.name }}" class="form-control {{ obj.class }}">
+            <option selected value=""> All </option>
+            {% for item in obj.items %}
+                <option {{ 'selected' if item[key] == obj.value }} value="{{ item[key] }}">
+                    {{ item[fieldDisplay] }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+{% endmacro %}
+
+{#Checkbox - Switch#}
+{% macro Checkbox(obj = {label: '', name: '', value: '', switch: false, checked: false}) %}
+    <div class="form-group">
+        {{ Label(obj) }}
+        <div>
+            <input
+                type="checkbox"
+                name="{{ obj.name }}"
+                class="{{ 'switch' if obj.switch }}"
+                {{ "checked" if obj.checked }}>
+        </div>
+    </div>
+{% endmacro %}
+
+{#CallMediaPopup#}
+{% macro CallMediaPopup(obj = {class: '', action: '', targetId: '', text: ''}) %}
+    <a class="{{ obj.class }}"
+       type="button"
+       data-toggle="modal"
+       data-target="#MediaPopup"
+       data-multi="{{ obj.multi }}"
+       data-action="{{ obj.action }}"
+       data-targetid="{{ obj.targetId }}"
+        data-type="{{ obj.type if obj.type else 'image' }}">{{ obj.text }}</a>
+{% endmacro %}
+
+{#Editor#}
+{% macro Editor(obj) %}
+    <div class="form-group">
+        {{ Label(obj) }}
+        <p>{{ CallMediaPopup({text: 'Chèn ảnh', action: 'add-img-to-editor', class: 'add-img-to-editor', targetId: obj.name}) }}</p>
+        <textarea id="{{ obj.name }}" name="{{ obj.name }}" class="form-control editor">{{ obj.value }}</textarea>
+    </div>
+{% endmacro %}
+
+{#Checkbox Group#}
+{% macro CheckboxGroup(obj = {label: '', inputName: '', items: '', selectedItems: ''}) %}
+    {% set selectedItems = obj.selectedItems if obj.selectedItems else [] %}
+    <p><strong>{{ obj.label }}</strong></p>
+    <div class="checkbox-group">
+        {% for item in obj.items %}
+            <div class="form-group">
+                <input
+                    {{ "checked" if selectedItems.indexOf(item.id) > -1 }}
+                    type="checkbox"
+                    id="{{ item.id }}"
+                    value="{{ item.id }}"
+                    name="{{ obj.inputName }}">
+                <label for="{{ item.id }}">{{ item.name }}</label>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{#Taxonomies Box#}
+{% macro TaxonomiesBox(obj = {label: '', inputName: '', taxonomyModule: '', taxonomyType: '', items: '', selectedItems: ''}) %}
+    <div class="box box-taxonomies"
+        data-input-name="{{ obj.inputName }}"
+        data-taxonomy-type="{{ obj.taxonomyType }}"
+        data-taxonomy-module="{{ obj.taxonomyModule }}">
+        <div class="box-body">
+            {{ CheckboxGroup(obj) }}
+
+            {% if obj.canCreateNewItem %}
+                <a role="button" data-toggle="collapse" href="#{{ obj.inputName }}Collapse" aria-expanded="false" aria-controls="{{ obj.inputName }}Collapse">
+                    + thêm danh mục mới
+                </a>
+                <div class="collapse" id="{{ obj.inputName }}Collapse">
+                    <div class="form-group form-group-sm mb0 mt5">
+                        <input type="text" class="form-control" name="newTaxonomy" id="newTaxonomy" placeholder="Tên danh mục" autocomplete="off">
+                        <button class="btnAddNewTaxonomy btn btn-default btn-sm mt5" type="button">thêm mới</button>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}
+
+{#Alias#}
+{% macro Alias(module, slug) %}
+    <div class="form-group form-group-sm" id="aliasSection">
+        <label for="slug">Alias</label>
+        <a class="pointer pl5 fz13" id="editSlug" data-module="{{ module }}">edit alias</a>
+        <input readonly class="form-control" type="text" id="slug" name="slug" value="{{ slug }}">
+    </div>
+{% endmacro %}
+
+{#Box Select#}
+{% macro BoxPostStatus(status) %}
+    <div class="box">
+        <div class="box-body">
+            <div class="form-group">
+                {% set items = [{id: 'show', name: 'Hiển thị'}, {id: 'hide', name: 'Ẩn'}] %}
+                {{ Select({label: 'Trạng thái', name: 'status', items: items, value: status or 'show'}) }}
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary">Lưu</button>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{#Single Image Box#}
+{% macro SingleImageBox(obj = {label: '', inputName: '', imagePath: '', targetId: ''}) %}
+    <div class="box">
+        <div class="box-body">
+            <label>{{ obj.label }}</label>
+            <div id="{{ obj.targetId }}">
+                <input class="image-path" type="hidden" name="{{ obj.inputName }}" value="{{ obj.imagePath }}">
+                {% if (obj.imagePath) %}
+                    <img src="{{ _global.post_thumbnail(obj.imagePath) }}" />
+                {% endif %}
+            </div>
+            <div style="margin-top: 10px;">
+                {{ CallMediaPopup({text: 'Chọn ảnh', action: 'single', class: 'pointer', targetId: obj.targetId}) }}
+                <span class="sperate"> &nbsp; &nbsp; | &nbsp; &nbsp; </span>
+                <a class="pointer removeSingleImage" data-targetid="featureImage">Xóa</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{#Single Image Box#}
+{% macro OptionImageBox(obj = {inputName: '', imagePath: '', targetId: ''}) %}
+    <div id="{{ obj.targetId }}">
+        <input class="image-path" type="hidden" name="{{ obj.inputName }}" value="{{ obj.imagePath }}">
+        {% if (obj.imagePath) %}
+            <img src="{{ _global.post_thumbnail(obj.imagePath) }}" />
+        {% else %}
+            <i class="fa fa-image no-image"></i>
+        {% endif %}
+    </div>
+    <div style="margin-top: 10px;">
+        {{ CallMediaPopup({text: 'Chọn ảnh', action: 'single', class: 'pointer', targetId: obj.targetId}) }}
+        <span class="sperate"> &nbsp; &nbsp; | &nbsp; &nbsp; </span>
+        <a class="pointer removeSingleImage" data-targetid="{{ obj.targetId }}">Xóa</a>
+    </div>
+{% endmacro %}
+
+{#Gallery#}
+{% macro Gallery(obj = {label: '', pathName: '', targetId: '', galleryClass: '', value: [], type: 'image' }) %}
+    <div class="box">
+        <div class="box-body">
+            {% if obj.label %} <label>{{ obj.label }}</label> {% endif %}
+            <ul class="gallery sortable {{ obj.galleryClass }}" id="{{ obj.targetId }}" data-path="{{ obj.pathName }}">
+                {% for image in obj.value %}
+                    <li>
+                        <input type="hidden" name="{{ obj.pathName }}" value="{{ image.image }}">
+                        <img src="{{ _global.post_thumbnail(image.image) }}" alt="{{ image.image }}">
+                        <i class="fa fa-times "></i>
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="pull-left" style="margin-top: 10px; height: 20px;">
+                {{ CallMediaPopup({
+                    text: 'Chọn ảnh',
+                    action: 'post-gallery',
+                    multi: true,
+                    class: 'pointer',
+                    targetId: obj.targetId,
+                    type: obj.type
+                }) }}
+                <span class="sperate"> &nbsp; &nbsp; | &nbsp; &nbsp; </span>
+                <a class="pointer removeSingleImage" data-targetid="{{ obj.targetId }}">Xóa</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{#Gallery#}
+{% macro GalleryId(obj = {label: '', pathName: '', targetId: '', value: [], type: 'image' }) %}
+    <div class="box">
+        <div class="box-body">
+            {% if obj.label %} <label>{{ obj.label }}</label> {% endif %}
+            <ul class="gallery sortable {{ obj.galleryClass }}" id="{{ obj.targetId }}" data-path="{{ obj.pathName }}">
+                {% for image in obj.value %}
+                    <li>
+                        <input type="hidden" name="{{ obj.pathName }}" value="{{ image.id }}">
+                        <img src="/uploads/{{ image.path + '-150x150' +  image.ext }}" alt="{{ image.name }}">
+                        <i class="fa fa-times "></i>
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="pull-left" style="margin-top: 10px; height: 20px;">
+                {{ CallMediaPopup({
+                    text: 'Chọn ảnh',
+                    action: 'galleryId',
+                    multi: true,
+                    class: 'pointer',
+                    targetId: obj.targetId,
+                    type: obj.type
+                }) }}
+                <span class="sperate"> &nbsp; &nbsp; | &nbsp; &nbsp; </span>
+                <a class="pointer removeSingleImage" data-targetid="{{ obj.targetId }}">Xóa</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{#Single Image Id#}
+{% macro SingleImageId(image) %}
+    <div class="box">
+        <div class="box-body">
+            <label>Chọn ảnh đại diện</label>
+            <div id="featureImageId">
+                <input class="image-path" type="hidden" name="image" value="{{ image.id }}">
+                {% if (image.path) %}
+                    <img src="/uploads/{{ image.path + '-150x150' + image.ext }}" />
+                {% endif %}
+            </div>
+            <div style="margin-top: 10px;">
+                {{ CallMediaPopup({text: 'Chọn ảnh', action: 'singleId', class: 'pointer', targetId: 'featureImageId'}) }}
+                <span class="sperate"> &nbsp; &nbsp; | &nbsp; &nbsp; </span>
+                <a class="pointer removeSingleImage" data-targetid="featureImageId">Xóa</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

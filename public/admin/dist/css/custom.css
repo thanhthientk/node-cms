@@ -1,0 +1,259 @@
+.setting-title h4{
+    margin-top: 5px;
+}
+.pointer{
+    cursor: pointer;
+}
+.sperate{
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+}
+.content-header{
+    padding: 0 !important;
+    margin-bottom: 15px;
+}
+.content-header>.breadcrumb{
+    padding: 0;
+    top:9px;
+}
+.toolbar {
+    margin-bottom: 10px;
+}
+.main-table{}
+.main-table thead th a{
+    display: block;
+}
+.main-table input[type=checkbox]{
+    transform: scale(1.2);
+    width:100%;
+}
+.main-table i.fa-sort{
+    margin-top: 3px;
+}
+.role-checkbox{
+    padding-left: 15px;
+}
+.role-checkbox input{
+    vertical-align: top;
+}
+
+#uploadPopup .modal-body{
+    padding: 3px !important;
+}
+a.add-img-to-editor{
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+a.img-thumb{
+    cursor: pointer;
+    float: left;
+    width:12.5%;
+    padding: 5px;
+}
+a.img-thumb img{
+    width:100%;
+}
+a.img-thumb.selected img{
+    border: 5px solid #1ab7ea;
+    padding:1px;
+}
+#MediaPopup .modal-body{
+    padding: 6px;
+}
+#MediaPopup .modal-footer{
+    padding: 10px !important;
+}
+#MediaPopup .modal-body,
+#MediaPopup .modal-footer,
+#MediaPopup .modal-content {
+    float: left;
+    width:100%;
+}
+
+.media-navigation button{
+    background-color: #fff;
+}
+.media-navigation button i{
+    font-size: 18px;
+}
+.fw600{
+    font-weight: 600;
+}
+.checkbox-group .form-group{
+    margin-bottom: 0;
+}
+.checkbox-group .form-group label{
+    font-weight: 400;
+}
+.checkbox-group .form-group input{
+    transform: scale(1.2);
+    vertical-align: top;
+    margin-right: 5px;
+}
+.mb0{
+    margin-bottom: 0 !important;
+}
+.mt5{
+    margin-top: 5px !important;
+}
+.ml5{
+    margin-left: 5px;
+}
+.mr3{
+    margin-right: 3px;
+}
+.mg0{
+    margin: 0 !important;
+}
+.mt10{
+    margin-top: 10px;
+}
+.pl5{
+    padding-left: 5px;
+}
+.fz13{
+    font-size: 13px;
+}
+
+.nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #444;
+    background-color: transparent !important;
+}
+.nav-pills>li>a>.fa{
+    width:22px;
+    margin-right: 0;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    margin-top: 0 !important;
+}
+.select2-container--bootstrap .select2-selection--single,
+.select2-container--bootstrap.select2-container--focus .select2-selection, .select2-container--bootstrap.select2-container--open .select2-selection{
+    border-radius: 0 !important;
+}
+.select2-container--bootstrap{
+    width: 100% !important;
+}
+
+.translations h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.translations a{
+    display: block;
+}
+.translations a img{
+    position: relative;
+    top: -1px;
+}
+.translations a span{
+    padding: 0 5px;
+}
+
+th .flags img{
+    margin-right: 20px;
+}
+th .flags img:last-child{
+    margin-right: 0;
+}
+td.flags a{
+    margin-right: 22px;
+}
+td.flags a:last-child {
+    margin-right: 0;
+}
+
+.thin-label label{
+    font-size: 13px;
+    font-weight: 400;
+}
+.form-group-sm.thin-label .form-control {
+    font-size: 14px;
+}
+
+.gallery{
+    padding: 0;
+    margin: 0;
+    float: left;
+    width:100%;
+    margin-bottom: 10px;
+}
+.gallery li{
+    float: left;
+    padding:3px;
+    list-style-type: none;
+    position: relative;
+}
+.gallery li:hover{
+    cursor: -webkit-grab;
+}
+.gallery li:active{
+    cursor: -webkit-grabbing;
+}
+.gallery li a{}
+.gallery li img{
+    width:100%;
+}
+.gallery.small li i.fa {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 3px;
+    z-index: 999;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*gallery big*/
+.gallery.big li:first-child{
+    width: calc(198% / 6);
+}
+.gallery.big.no-big-thumb li:first-child{
+    width: calc(99% / 6);
+}
+.gallery.big li{
+    width: calc(99% / 6);
+}
+
+/*gallery small*/
+.gallery.small{
+    width: calc(100% + 6px);
+    margin-left: -3px;
+}
+.gallery.small li:first-child{
+    width: calc(198% / 3);
+}
+.gallery.small.no-big-thumb li:first-child{
+    width: calc(99% / 3);
+}
+.gallery.small li{
+    width: calc(99% / 3);
+}
+
+.gallery li input[type=text] {
+    position: absolute;
+    bottom: 3px;
+    width: calc(100% - 6px);
+    padding: 2px 5px;
+}
+
+/**/
+.tab-content.theme-options{}
+.tab-content.theme-options hr:last-child{
+    display: none;
+}
+.tab-content.theme-options hr{
+    margin-bottom: 10px;
+}
+.tab-content.theme-options .form-group{
+    margin-bottom: 5px;
+}
+
+/**/
+.no-image{
+    font-size: 30px;
+    color: #666;
+}

@@ -1,0 +1,43 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {#Head#}
+    <section class="content-header">
+        <h1>
+            {{ 'Hình ảnh' if reqQuery.type === 'image' else 'Gallery' }}
+        </h1>
+    </section>
+    {#Toolbar#}
+    <div class="toolbar">
+        <a href="/admin/{{ moduleInfo.slug }}?type={{ reqQuery.type }}" class="btn btn-info">
+            <i class="fa fa-refresh"></i>
+            Làm mới
+        </a>
+        <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#uploadPopup"
+                data-type="{{ reqQuery.type if reqQuery.type else 'image' }}">
+            <i class="fa fa-plus"></i>
+            Thêm mới
+        </button>
+        <a class="btn btn-danger pull-right disabled" id="multipleDelete-btn">
+            <i class="fa fa-remove"></i>
+            Xóa
+        </a>
+    </div>
+
+    {#Table Content#}
+    <div class="box">
+        <div class="box-body table-responsive no-padding">
+            {% include "./../../views/partials/main-table.xoo" %}
+        </div>
+        <div class="box-footer clearfix">
+            {% include "../../views/partials/pagination.xoo" %}
+        </div>
+    </div>
+
+    {#Upload popup#}
+    {% include "./upload-popup.xoo" %}
+
+{% endblock %}

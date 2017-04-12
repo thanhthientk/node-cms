@@ -1,0 +1,59 @@
+{% extends "../../views/layout.xoo" %}
+
+{% block content %}
+    {{ super() }}
+
+    <form method="post" id="main-form">
+        <input type="hidden" name="_csrf" value={{ _csrf }}>
+        <input type="hidden" name="userId" value="{{ item.id }}">
+        {# Form inputs#}
+        <div class="row">
+            <div class="col-xs-9">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Tên', name: 'fullname', value: item.fullname, required: true}) }}
+                        {{ Form.Input({label: 'Email', readonly: true if controller === 'edit', name: 'email', type: 'email', value: item.email, required: true}) }}
+                        {% if controller === 'create' %}
+                            {{ Form.Input({label: 'Mật khẩu', name: 'password', type: 'password', value: item.password, required: true}) }}
+                            {{ Form.Input({label: 'Nhập lại mật khẩu', name: 'password2', type: 'password', value: item.password2, required: true}) }}
+                        {% endif %}
+                        {{ Form.Select({label: 'Phân quyền', name: 'role', value: item.role, items: roles}) }}
+                        {% if controller === 'edit' %}
+                            {#Change Password#}
+                            <a class="pointer" data-toggle="modal" data-target="#changePasswordModal">Thay đổi Mật khẩu</a>
+                            <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="changePasswordModalLabel">Đổi mật khẩu</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="alert alert-danger hidden" id="changePasswordMessage"></div>
+                                            {{ Form.Input({label: 'Mật khẩu hiện tại', name: 'oldPassword', type: 'password', value: item.password, required: true}) }}
+                                            {{ Form.Input({label: 'Mật khẩu mới', name: 'newPassword', type: 'password', value: item.password, required: true}) }}
+                                            {{ Form.Input({label: 'Nhập lại mật khẩu mới', name: 'newPassword2', type: 'password', value: item.password2, required: true}) }}
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" id="btnSubmitChangePassword">Lưu</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        {{ Form.Input({label: 'Ảnh đại diện', name: 'avatar', type: 'file'}) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+{% endblock %}
