@@ -31,7 +31,14 @@
         title: product.name + ' - Gynos',
         description: product.description,
         contentType: 'product',
-        image: URL + '/uploads/' + product.image.path + product.image.ext
+        image: URL + '/uploads/' + product.gallery[0].path + product.gallery[0].ext
+    } %}
+{% elif pageType === 'page' %}
+    {% set seo = {
+    title: page.name + ' - Gynos',
+    description: page.description,
+    contentType: 'page',
+    image: URL + '/uploads/' + page.gallery[0].path + page.gallery[0].ext
     } %}
 {% endif %}
 
