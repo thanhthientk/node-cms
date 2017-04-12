@@ -52,7 +52,7 @@
 <script type="text/javascript" src="/gynos/assets/js/libs/owl.carousel.js"></script>
 <script type="text/javascript" src="/gynos/assets/js/libs/jquery.jcarousellite.js"></script>
 <script type="text/javascript" src="/gynos/assets/js/libs/jquery.elevatezoom.js"></script>
-<script type="text/javascript" src="/hotel/assets/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript" src="/gynos/assets/sweetalert/sweetalert.min.js"></script>
 {% block js %}
 {% endblock %}
 <script type="text/javascript" src="/gynos/assets/js/theme.js"></script>
