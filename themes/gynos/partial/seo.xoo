@@ -1,11 +1,45 @@
-{#SEO FOR GOOGLE#}
-<meta name="title" content="{{ item.fields.seo_title }}">
-<meta name="description" content="{{ item.fields.seo_desc }}">
+{% if pageType === 'home' %}
+    {% set seo = {
+        title: Settings.homeTitle,
+        description: Settings.homeDescription,
+        contentType: 'page',
+        image: URL + '/uploads/' + slides[0].image.path + slides[0].image.ext
+    } %}
+{% elif pageType === 'blog' %}
+    {% set seo = {
+        title: 'Bài viết - Gynos',
+        description: Settings.homeDescription,
+        contentType: 'blog',
+        image: URL + '/uploads/' + Options['blog_gallery'][0].path + Options['blog_gallery'][0].ext
+    } %}
+{% elif pageType === 'article' %}
+    {% set seo = {
+        title: post.name + ' - Gynos',
+        description: post.description,
+        contentType: 'article',
+        image: URL + '/uploads/' + post.image.path + post.image.ext
+    } %}
+{% elif pageType === 'products' %}
+    {% set seo = {
+        title: 'Sản phẩm - Gynos',
+        description: Settings.homeDescription,
+        contentType: 'products',
+        image: URL + '/uploads/' + Options['product_gallery'][0].path + Options['product_gallery'][0].ext
+    } %}
+{% elif pageType === 'product' %}
+    {% set seo = {
+        title: product.name + ' - Gynos',
+        description: product.description,
+        contentType: 'product',
+        image: URL + '/uploads/' + product.image.path + product.image.ext
+    } %}
+{% endif %}
 
-{#SEO FOR FB#}
-<meta property="og:url"                content="{{ URL }}/" />
-<meta property="og:type"               content="{{ contentType }}" />
-<meta property="og:title"              content="{{ item.fields.seo_title }}" />
-<meta property="og:description"        content="{{ item.fields.seo_desc }}" />
-<meta property="og:image"              content="{{ URL + '/uploads/ '+ item.image.path + item.image.ext }}" />
-<meta property="og:image:secure_url"   content="{{ URL + '/uploads/ '+ item.image.path + item.image.ext }}" />
+<meta name="title" content="{{ seo.title }}">
+<meta name="description" content="{{ seo.description }}">
+<meta property="og:url"                content="{{ FullUrl }}" />
+<meta property="og:type"               content="{{ seo.contentType }}" />
+<meta property="og:title"              content="{{ seo.title }}" />
+<meta property="og:description"        content="{{ seo.description }}" />
+<meta property="og:image"              content="{{ seo.image }}" />
+<meta property="og:image:secure_url"   content="{{ seo.image }}" />

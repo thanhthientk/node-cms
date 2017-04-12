@@ -22,15 +22,12 @@ module.exports = {
             let slides = Results[0],
                 products = Results[1],
                 recentPosts = Results[2];
-            //     homeGallery = Results[2],
-            //     roomsInSelect = Results[3];
 
             res.theme('index', {
                 slides,
                 products,
                 recentPosts,
-                // homeGallery,
-                // roomsInSelect
+                pageType: 'home'
             });
         } catch (err) {
             next(err);

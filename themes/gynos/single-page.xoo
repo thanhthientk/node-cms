@@ -34,8 +34,8 @@
                             <p><label>Đăng vào lúc:</label> <span class="post-date">{{ _global.timeFormat(page.createdOn, 'DD/MM/YYYY') }}</span></p>
                             <div class="share-social">
                                 <label>Chia sẻ:</label>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://gynos.vn/page/{{ page.slug }}"><i class="fa fa-facebook-square"></i></a>
-                                <a href="https://plus.google.com/share?url=http://gynos.vn/page/{{ page.slug }}" style="margin-right: 0;"><i class="fa fa-google-plus"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ FullUrl }}"><i class="fa fa-facebook-square"></i></a>
+                                <a href="https://plus.google.com/share?url={{ FullUrl }}" style="margin-right: 0;"><i class="fa fa-google-plus"></i></a>
                             </div>
                         </div>
                     </div>

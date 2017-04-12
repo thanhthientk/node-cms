@@ -44,6 +44,7 @@ for (let module of modules) {
             try {
                 let queries = yield Promise.all([
                     _app.model.setting.findById('58df4d0b2e26d9206c620ec4').select('data'),
+                    _app.model.setting.findById('58d3896f43f9db1fe059889e').select('data'),
                 ]);
 
                 let Options = queries[0];
@@ -56,7 +57,9 @@ for (let module of modules) {
                 Options.data['blog_gallery'] = images[1];
 
                 res.locals.Options = Options.data;
+                res.locals.Settings = queries[1].data;
                 res.locals.URL = 'http://gynos.vn';
+                res.locals.FullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
                 next();
             }
             catch (err) {

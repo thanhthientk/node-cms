@@ -26,14 +26,14 @@
                             <p><label>Đăng vào lúc:</label> <span class="post-date">{{ _global.timeFormat(post.createdOn, 'DD/MM/YYYY') }}</span></p>
                             <div class="share-social">
                                 <label>Chia sẻ:</label>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ URL }}/blog/{{ post.slug }}"><i class="fa fa-facebook-square"></i></a>
-                                <a href="https://plus.google.com/share?url={{ URL }}/blog/{{ post.slug }}" style="margin-right: 0;"><i class="fa fa-google-plus"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ FullUrl }}"><i class="fa fa-facebook-square"></i></a>
+                                <a href="https://plus.google.com/share?url={{ FullUrl }}" style="margin-right: 0;"><i class="fa fa-google-plus"></i></a>
                             </div>
                             <div class="single-content">
                                 {{ post.content | safe }}
                             </div>
                             <div class="fb-comment">
-                                <div class="fb-comments" data-href="{{ URL }}/blog/{{ post.slug }}" data-numposts="5" data-width="100%" data-colorscheme="light"></div>
+                                <div class="fb-comments" data-href="{{ FullUrl }}" data-numposts="5" data-width="100%" data-colorscheme="light"></div>
                             </div>
                         </div>
                     </div>

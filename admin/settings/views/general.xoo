@@ -27,7 +27,7 @@
                         {{ Form.Input({label: 'Tên website', name: 'websiteName', value: item.websiteName, placeholder: 'Nhập tên website'}) }}
                         {{ Form.Input({label: 'Tiêu đề trang chủ', name: 'homeTitle', value: item.homeTitle, placeholder: 'Nhập tiêu đề trang chủ'}) }}
                         {{ Form.Textarea({label: 'Mô tả trang chủ', name: 'homeDescription', value: item.homeDescription, placeholder: 'Nhập một mô tả để nâng cao xếp hạng trên công cụ tìm kiếm như Google.'}) }}
-                        {{ Form.Input({label: 'Email thông báo', type: 'email', name: 'adminEmail', value: item.adminEmail, placeholder: 'Nhập email gửi thông báo'}) }}
+                        {{ Form.Textarea({label: 'Từ khóa', name: 'keywords', value: item.keywords, rows: 2, placeholder: 'Nhập các từ khóa để nâng cao xếp hạng trên công cụ tìm kiếm như Google.'}) }}
                     </div>
                 </div>
             </div>

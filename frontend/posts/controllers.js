@@ -81,7 +81,7 @@ module.exports = {
         res.theme('single-blog', {
             post,
             pageTitle: post.name,
-            pageType: 'blog',
+            pageType: 'article',
             categories
         });
     }),
@@ -125,7 +125,7 @@ module.exports = {
             paginated,
             categories,
             pageTitle: 'Sản phẩm',
-            pageType: 'product',
+            pageType: 'products',
         });
     }),
     productDetail: co.wrap(function* (req, res, next) {
@@ -147,7 +147,7 @@ module.exports = {
         res.theme('single-product', {
             product,
             pageTitle: product.name,
-            pageType: 'blog',
+            pageType: 'product',
             categories,
             relatedProducts
         });
