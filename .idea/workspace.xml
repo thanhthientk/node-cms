@@ -44,8 +44,8 @@
       <file leaf-file-name="layout.xoo" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/gynos/layout.xoo">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="150">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -569,12 +569,12 @@
       <workItem from="1491876912611" duration="19855000" />
       <workItem from="1491962903015" duration="8479000" />
       <workItem from="1491978600301" duration="1943000" />
-      <workItem from="1491986836282" duration="3117000" />
+      <workItem from="1491986836282" duration="3715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="585702000" />
+    <option name="totallyTimeSpent" value="586300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -994,8 +994,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/gynos/layout.xoo">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="150">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding />
         </state>
       </provider>
