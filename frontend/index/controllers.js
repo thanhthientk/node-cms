@@ -1,5 +1,6 @@
 "use strict";
 const co = require('co');
+const http = require('http');
 
 module.exports = {
 

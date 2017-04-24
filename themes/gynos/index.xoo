@@ -10,11 +10,17 @@
                             <div class="item-slider">
                                 <div class="banner-thumb"><a href="#"><img src="/uploads/{{ slide.image.path + slide.image.ext }}" alt="{{ slide.name }}" /></a></div>
                                 <div class="banner-info black text-center text-uppercase animated" data-animated="swing">
-                                    <h3 class="title30">{{ slide.fields.title1 }}</h3>
-                                    <h2 class="title60">{{ slide.fields.title2 }}</h2>
-                                    <div class="list-btn-banner">
-                                        <a href="{{ slide.fields.link }}" class="btn-rect radius">{{ slide.fields.button }}</a>
-                                    </div>
+                                    {% if slide.fields.title1 %}
+                                        <h3 class="title30">{{ slide.fields.title1 }}</h3>
+                                    {% endif %}
+                                    {% if slide.fields.title2 %}
+                                        <h2 class="title60">{{ slide.fields.title2 }}</h2>
+                                    {% endif %}
+                                    {% if slide.fields.link and slide.fields.button %}
+                                        <div class="list-btn-banner">
+                                            <a href="{{ slide.fields.link }}" class="btn-rect radius">{{ slide.fields.button }}</a>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         {% endfor %}
