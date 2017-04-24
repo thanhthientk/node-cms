@@ -56,9 +56,9 @@ function fixed_header(){
 			var ht = $('#header').height();
 			var st = $(window).scrollTop();
 			if(st>ht){
-				$('.header-ontop').addClass('fixed-ontop');
+				$('.header-ontop, body').addClass('fixed-ontop');
 			}else{
-				$('.header-ontop').removeClass('fixed-ontop');
+				$('.header-ontop, body').removeClass('fixed-ontop');
 			}
 		}else{
 			return false;

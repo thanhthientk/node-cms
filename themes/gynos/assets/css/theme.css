@@ -533,8 +533,8 @@ div.table > div {
 }
 /*Begin Header On Top*/
 .header-ontop {
-  transition: all 0.5s ease-out 0s;
-  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .header-ontop.fixed-ontop {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -6009,4 +6009,9 @@ div.table > div {
 .main-header.header-ontop.fixed-ontop .logo img{
   width:90px;
   transition: all 200ms;
+}
+
+/**/
+body.fixed-ontop{
+  padding-top: 116px;
 }
