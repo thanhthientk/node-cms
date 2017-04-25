@@ -6015,3 +6015,30 @@ div.table > div {
 body.fixed-ontop{
   padding-top: 116px;
 }
+
+/**/
+@media (max-width: 991px) {
+	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(4n + 1) {
+		clear: inherit;
+	}
+	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(3n + 1) {
+		clear: both;
+	}
+}
+@media (min-width: 992px) {
+	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(4n + 1) {
+		clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(4n + 1) {
+		clear: inherit;
+	}
+	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(3n + 1) {
+		clear: inherit;
+	}
+	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(2n + 1) {
+		clear: both;
+	}
+}
