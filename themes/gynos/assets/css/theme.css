@@ -6041,4 +6041,14 @@ body.fixed-ontop{
 	.list-product1 .row .col-md-3.col-sm-4.col-xs-6:nth-child(2n + 1) {
 		clear: both;
 	}
+  .content-product-detail .detail-product-tab{
+    padding: 0 10px 20px;
+  }
+  .content-product-detail .detail-product-tab img{
+    max-width: 100% !important;
+    height: initial !important; 
+  }
+  .content-product-detail .detail-product-tab table{
+    width: 100% !important;
+  }
 }
