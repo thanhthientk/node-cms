@@ -12,7 +12,7 @@ const co = require('co');
 module.exports = {
 	start: co.wrap(function* () {
 		//Load Environment
-		env.load({ path: path.join(__dirname, './env/.env.pro') });
+		env.load({ path: path.join(__dirname, './env/.env.dev') });
 
 		//Connect Database
 		database.init();
